@@ -46,7 +46,7 @@ For example, you can see the list of files in your repository:
 ![](https://docs.github.com/assets/images/help/repository/actions-quickstart-log-detail.png)
 
 
-# if time permits:
+# If time permits:
 
 ## Only trigger workflow when a change is made to the website
 
