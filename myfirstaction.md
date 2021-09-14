@@ -50,5 +50,7 @@ For example, you can see the list of files in your repository:
 
 ## Only trigger workflow when a change is made to the website
 
+## Only trigger workflow on new issue created
+
 ## Create a Matrix build for release and debug
 
