@@ -44,3 +44,11 @@ Committing the workflow file to a branch in your repository triggers the push ev
 
 For example, you can see the list of files in your repository:
 ![](https://docs.github.com/assets/images/help/repository/actions-quickstart-log-detail.png)
+
+
+# if time permits:
+
+## Only trigger workflow when a change is made to the website
+
+## Create a Matrix build for release and debug
+
