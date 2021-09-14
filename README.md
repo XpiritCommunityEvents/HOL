@@ -6,6 +6,7 @@ You can find the details for each of the hands-on labs in the sequence of the bo
 Day 1:
 - [Setting up your repository](settinguprepository.md)
 - [Creating your first Action Workflow](myfirstaction.md)
+
 Day 2:
 - [Migrating Pipelines form Azure DevOps](migration.md) 
 - Adding Custom Mappings for your migrations
