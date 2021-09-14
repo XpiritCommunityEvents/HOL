@@ -6,7 +6,7 @@ For this bootcamp, we have prepared a public Azure DevOps repository for you and
 Before you can clone an existing repo, you'll need an URL that points to the existing repo. This URL represents the source of the repo you're going to copy. 
 For the purpose of this bootcamp, we have prepared an Azure DevOps repository for you. 
 
-**Please use the following URL:** (...) **<TODO**
+**For this bootcamp, please use the following URL:** (...) **<TODO**
 
 Normally, you would perform the following steps to obtain the URL of the Azure DevOps repository you want to migrate. 
 1. From your web browser, open the team project for your Azure DevOps organization and choose `Repos`, then `Files`.
