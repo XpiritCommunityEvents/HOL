@@ -6,7 +6,7 @@ You can find the detailed for each Hands-on lab here:
 
 - Setting up your repository
 - Migrating Pipelines form Azure DevOps
-- Adding Custom Mapopings for your migrations
+- Adding Custom Mappings for your migrations
 - Settign up Code Scanning for your repository
 - Enabling and using Dependabot on your repository
 - Using CodeSpaces on your repository
