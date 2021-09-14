@@ -24,18 +24,24 @@ jobs:
 ```
 4. Scroll to the bottom of the page and select `Create` a new branch for this commit and start a pull request. Then, to create a pull request, click `Propose new file`.
 ![](https://docs.github.com/assets/images/help/repository/actions-quickstart-commit-new-file.png)
+
 Committing the workflow file to a branch in your repository triggers the push event and runs your workflow.
 ## Viewing your workflow results
 1. On GitHub, navigate to the main page of the repository.
 2. Under your repository name, click `Actions`.
 ![](https://docs.github.com/assets/images/help/repository/actions-tab.png)
+
 3. In the left sidebar, click the workflow you want to see.
 ![](https://docs.github.com/assets/images/help/repository/actions-quickstart-workflow-sidebar.png)
+
 4. From the list of workflow runs, click the name of the run you want to see.
 ![](https://docs.github.com/assets/images/help/repository/actions-quickstart-run-name.png)
+
 5. Under `Jobs` , click the `Explore-GitHub-Actions` job.
 ![](https://docs.github.com/assets/images/help/repository/actions-quickstart-job.png)
+
 6. The log shows you how each of the steps was processed. Expand any of the steps to view its details.
 ![](https://docs.github.com/assets/images/help/repository/actions-quickstart-logs.png)
+
 For example, you can see the list of files in your repository:
 ![](https://docs.github.com/assets/images/help/repository/actions-quickstart-log-detail.png)
