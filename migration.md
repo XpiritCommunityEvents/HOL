@@ -1,4 +1,23 @@
-# start by pulling the docker image for valet
+# Migrating pipelines from Azure DevOps to Github Actions using Valet 
+In this hands-on lab you will get a first glance at the tooling that is build to migrate CI/CD solutions to GitHub actions. This tool is called **Valet**
+
+We will start with setting up the tools, use the tools for a dry-run and do a migration of one pipleline to Azure Devops to get a feel on how the tools work.
+
+All the hands-on labs will use the CodeSapces capabillity of GitHub. During the import of the git repository, we more or leass sneaked in the configuration for the codespaces setup. This is done because we included a folder called .devcontainer. This contains the setup of our development environment for this hands-on exersise.
+So before we continue the hands-on lab, goto your repository and start your codespace instance by clicking the button "create new codespace"
+
+![starting codespaces](images/codepaces.png)
+
+## Settign up Valet on your development environment.
+
+Valet uses a docker container to do all the work. This container is available the moment you are onboarded to valet.
+Valet consist primaraly out of two thigns we need to setup before we can do some work:
+- a docker image that we need on our machine
+- a script called valet, that drives the use of the docker container on our workstation.
+
+Let us get started by settign up the tools so they work.
+
+### Pulling the docker image for valet
 
 Start your codespace instance
 goto the terminal window in your codespace environment (or in visual studio code if you prefer to use that)
