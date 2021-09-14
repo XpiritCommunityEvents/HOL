@@ -21,7 +21,7 @@ Normally, you would perform the following steps to obtain the URL of the Azure D
 Now, let's clone the Azure DevOps repository into the GitHub repository.
 1. Enter the command `git clone [PASTE_AZURE_DEVOPS_REPO_URL_HERE]`. You'll be asked for your credentials. **<TODO**
 2. Enter the command `git remove origin`. The git remote remove command removes a remote URL from a repository.
-3. Currently, your main branch is called 'master'. Let's rename it to 'main'. Enter the command `git branch -m main`. From this point onwards, your main branch will be called 'main' instead of 'master'.
+3. Currently, your main branch is called `master`. Let's rename it to `main` Enter the command `git branch -m main`. From this point onwards, your main branch will be called `main` instead of `master`.
 4. Now, we'll add a new remote pointing to your GitHub repository. Enter the command `git remote add [https://github.com/[username]/[repo].git] **<TODO**
 5. Now, let's push the commit to the repository. Enter the command `git push remote main`.
 The repository is now migrated from Azure DevOps to GitHub wil full history. In the next part of the bootcamp, we'll look at what is migrated, and what we are missing after the migration.
