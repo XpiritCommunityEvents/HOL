@@ -31,21 +31,30 @@ Let us get started by settign up the tools so they work.
 
 ### Pulling the docker image for valet
 
-Start your codespace instance
-goto the terminal window in your codespace environment (or in visual studio code if you prefer to use that)
+In the terminal window in your codespace environment (or in visual studio code if you prefer to use that)
 type at the command-line:
 > docker images
 This should return an empty list of images
+```
+codespace ➜ /workspaces/<your repo name> (main) $ docker images
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+  ```
 
 now pull the docker image for valet:
 > $ docker login ghcr.io/valet-customers/valet-cli
 
->Username:<yourdockerhandle>
+>Username: **yourdockerhandle**
 
->Password:<your github personal access token here>
+>Password: **your github personal access token here**
 
 expected output:
->Login Succeeded
+```
+Username: <yourgithubhandle>
+Password: *******
+WARNING! Your password will be stored unencrypted in /home/codespace/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+  ```
 
 Next we pull the image to the local codespace 
 
@@ -74,7 +83,10 @@ The Team project name we can use for this excersise is **TailWindTraders**
 > note: please feel free to use your own azure devops projects, the lab is more step by step prepared, feel free to go of script!
 
 Now goto the folder **valet** on your local repo in your codespaces IDE.
-In this folder you find the valet scripts. Try to run this script. 
+In this folder you find the valet scripts. We already put them on the development environment, this is a step you ave to take when you do this in the future on your own development environment. You can find this script in the valet/customer repo that you should have access to.
+  
+Try to run this script. 
+
 if it fails with a security message, it is possible the file is not executable. For this run the command:
 > chmod +x valet
 This should mark it as executable on your local dev container.
@@ -103,9 +115,9 @@ Options:
       [--credentials-file=CREDENTIALS_FILE]                                  # The file containing the credentials to use.
       [--no-telemetry], [--no-no-telemetry]                                  # Boolean value to disallow telemetry.
 ```
-
-You now either run a migration from the commandline with input arguments or make changes to the file called .env.local in the valet folder. 
-Currently there are no options in there, for this lab you can add the following parameters:
+## Run an audit on the existing Azure DevOps project
+to run valet commands we need to pass in the arguments at each command or we can set up a file called .env.local. We provided this file already in the valet folder. It is most convinient to use this file and only fill in the missing details for Azure DevOps and for GitHub. 
+Add the following parameters to the file:
 ```
 AZURE_DEVOPS_ACCESS_TOKEN=<token will be provided>
 AZURE_DEVOPS_PROJECT=TailWindTraders
@@ -119,7 +131,7 @@ now run the following command:
 This will run the tool with the options you specified in the .env.local file.
 
 The output of this audit run will result in a set of files that got generated to become the future action workflows and a summary page that contains the autput of the audit. 
-  Here you can see how the migration will happen and how successfull it will be. Note not everythign will be migrated and manual fixes are needed to succeed
+Here you can see how the migration will happen and how successfull it will be. Note not everythign will be migrated and manual fixes are needed to succeed
   
 # Execute the migration
 valet migrate azure-devops pipeline --target-url https://github.com/Microsoft-Bootcamp/<your-repo-name> --pipeline-id ###number from azdo pipeline###
