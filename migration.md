@@ -132,9 +132,44 @@ This will run the tool with the options you specified in the .env.local file.
 
 The output of this audit run will result in a set of files that got generated to become the future action workflows and a summary page that contains the autput of the audit. 
 Here you can see how the migration will happen and how successfull it will be. Note not everythign will be migrated and manual fixes are needed to succeed
+ 
+Inspect the file **audit_summary.md** and look at the results of the audit migration
   
 # Execute the migration
-valet migrate azure-devops pipeline --target-url https://github.com/Microsoft-Bootcamp/<your-repo-name> --pipeline-id ###number from azdo pipeline###
+Now we are going to migrate on eof the successfull pipelines. 
+For this we need to make changes to the .env.local. file or pass in the arguments at the commandline. 
+Make changes to the .env.local. file and add the following parameters to the file:
+  
+```
+GITHUB_ACCESS_TOKEN=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
+GITHUB_INSTANCE_URL=https://github.com
+```
 
-Now inspect the action workflow and try to run it and see if it works out of the box.
+Now we can run the commandline and need to pass it the pipeline command. This command also requires to pass in a --target-url, which is the github repo you are targeting. This is the location https://github.com/Microsoft-Bootcamp/<your-repo-name> 
+You also need the pipeline id of the Azure DevOps pipeline. You can fin dthis in the URL of the Azure DevOps project the moment you browse to the pipeline details. See the picture below where to find it:
+  
+[finding the pipeline id](images/pipeline-id.png)
+
+Then we can run the following command to execute the migration:
+> valet migrate azure-devops pipeline --target-url https://github.com/Microsoft-Bootcamp/<your-repo-name> --pipeline-id ###number from azdo pipeline###
+You will find the following results:
+```
+[2021-09-14 11:45:04] Logs: 'log/valet-20210914-114504.log'                                                                                     
+WARNING: `Faraday::Connection#basic_auth` is deprecated; it will be removed in version 2.0.                                                     
+While initializing your connection, use `#request(:basic_auth, ...)` instead.
+See https://lostisland.github.io/faraday/middleware/authentication for more usage info.
+WARNING: `Faraday::Connection#authorization` is deprecated; it will be removed in version 2.0.                                                  
+While initializing your connection, use `#request(:authorization, ...)` instead.
+See https://lostisland.github.io/faraday/middleware/authentication for more usage info.
+[2021-09-14 11:45:08] Pull request: 'https://github.com/Microsoft-Bootcamp/your-repo/pull/xxx' 
+ ```
+
+The last line shows you a pull request that got created on the target repository that contains the migrated workflow.
+This will look as follows:
+
+[](images/workflow-pullrequest.png)
+
+Now inspect the pull request and the action workflow that is part of the pull request.
+Accept the pull request and make a change to one of the files in the repository so you trigger the action workflow.
+
   
