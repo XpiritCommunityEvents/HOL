@@ -1,0 +1,18 @@
+# Creating a custom mapping to override the default behavior or non existing mappings
+In this lab you will create a custom plugin that transforms some of the exising migration mapping and replace it by your own mapping. 
+For this you need to start coding  in Ruby.
+
+## Creating a mapping
+To create a maping you need to create a ruby file that looks as follows:
+``` ruby
+transform "AzureResourceGroupDeployment@2" do |item|
+    {
+      uses: "azure/arm-deploy@v1",
+      with:
+      {
+        subscriptionId: "#{item['ConnectedServiceName']}",
+        resourceGroupName: "#{item['resourceGroupName']}",
+        template: "#{item['csmFile']}"
+      }
+    }
+  end
