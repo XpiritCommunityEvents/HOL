@@ -30,4 +30,11 @@ Now, let's clone the Azure DevOps repository into the GitHub repository.
 5. Now, let's push the commit to the repository. Enter the command `git push remote main`.
 The repository is now migrated from Azure DevOps to GitHub wil full history. In the next part of the bootcamp, we'll look at what is migrated, and what we are missing after the migration.
 
+# if time permits:
+Set up a branch rule
+**todo: description**
+
+Set up CODEOWNERS
+**todo: description**
+
 **^^TODO: validate**
