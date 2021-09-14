@@ -1,7 +1,6 @@
 # Migrating your repository from AzureDevops
-This LAB has the goal to show you how you can migrate an Existing Azure DevOps git repository to GitHub. This is the fiurst step that needs to be finished fo all the other labs to succeed. 
+This hands-on lab has the goal to show you how you can migrate an existing Azure DevOps git repository to GitHub. This is the first step that needs to be finished fo all the other labs to succeed. 
 
-We'll migrate from an existing Azure DevOps repository to a Github repository. 
 For this bootcamp, we have prepared a public Azure DevOps repository for you and created a private GitHub repository for you.
 
 ## Acquire the Azure DevOps Git repository URI
@@ -10,7 +9,7 @@ For the purpose of this bootcamp, we have prepared an Azure DevOps repository fo
 
 **For this bootcamp, please use the following URL: https://dev.azure.com/xpirit/TailWindTraders**
 
-First start wit retrieving the URI of the Azure DevOps repository you want to migrate. 
+First start with retrieving the URL of the Azure DevOps repository you want to migrate. 
 1. From your web browser, open the team project for your Azure DevOps organization and choose `Repos`, then `Files`.
 
 ![get clone uri](https://docs.microsoft.com/en-us/azure/devops/repos/git/media/clone-repo/repos-files.png?view=azure-devops)
@@ -27,7 +26,7 @@ Enter the command
 > `git clone [PASTE_AZURE_DEVOPS_REPO_URL_HERE]`
 
 Now we have a cloned repository with the full history on your local drive. Next we want to move this repo with the history to the GitHub repo that is available for you.
-You should have access to a GitHub Repo in the organization https://github.com/Microsoft-Bootcamp. this repo has the name `attendee-<yourgithubhandle>`
+You should have access to a GitHub Repo in the organization https://github.com/Microsoft-Bootcamp. This repo has the name `attendee-<yourgithubhandle>`
 
 Now we need to remove the current origin in the git repo that it is pointing to. For this we enter the following command:
 
@@ -44,15 +43,15 @@ Now, we'll add a new remote pointing to your GitHub repository. for this you use
 So, your command would look something like `git remote add origin https://github.com/Microsoft-Bootcamp/attendee-<yourgh-handle>.git`
 
 Now we are ready to push the complete repo, including it's history to the GitHub repo.
-For this you can use the command :
+For this you can use the command:
 >`git push -u origin main`
 
-> note: if you are asking what is the `-u` option do:
-> The -u option does the following: For every branch that is up to date or successfully pushed, add upstream (tracking) reference, used by argument-less git-pull and other commands. So, after pushing your local branch with -u option, this local branch will be automatically linked with remote branch, and you can use git pull without any arguments
+> Note: if you are asking what does the `-u` option do:
+> The -u option does the following: For every branch that is up to date or successfully pushed, add upstream (tracking) reference, used by argument-less git-pull and other commands. So, after pushing your local branch with -u option, this local branch will be automatically linked with remote branch, and you can use git pull without any arguments.
 
-The repository is now migrated from Azure DevOps to GitHub wil full history. In the next part of the bootcamp, we'll look at what is migrated, and what we are missing after the migration.
+The repository is now migrated from Azure DevOps to GitHub with full history. In the next part of the bootcamp, we'll look at what is migrated, and what we are missing after the migration.
 
-# if time permits: Create a Branch Rule
+# If time permits: Create a Branch Rule
 By now your repository at github has content and we can now protecting our branches against unwanted direct updates. This is a very common setup in the enterprise.
 In this excersise we will create a branch rule that prevents you to commit to the main branch direct and require you to create a pull request.
 
@@ -60,7 +59,7 @@ In your GitHub repo goto the settings tab and click the branches option as shown
 ![branch protection rules](images/branch-protection-rules.png)
 
 Now add a new rule and define which branch you want to protect. e.g. provide the pattern name `main`
-next you select the following options:
+Next you select the following options:
 1. `Require pull request reviews before merging`
 2. `Include administrators`
 
@@ -70,11 +69,11 @@ To check if it works, create a change on one of the files that is in the main br
 
 ![create branch before commit](images/branch-before-commit.png)
 
-Now create a new branch and create a pull request that enables the code review from someone else in your organization/repo
+Now, create a new branch and create a pull request that enables the code review from someone else in your organization/repository.
 
-# if time permits: enforce CODEOWNERS review
+# If time permits: enforce CODEOWNERS review
 
-if you want to enforce certain teams can only approve parts of the codebase, like a web development team for all the web application code and a docs team for the documentation, you can use the code owners file. We can enforce the code owners need to be part of the review process by adding this to the Branch Protection Rule.
+If you want to enforce certain teams can only approve parts of the codebase, like a web development team for all the web application code and a docs team for the documentation, you can use the code owners file. We can enforce the code owners need to be part of the review process by adding this to the Branch Protection Rule.
 There is already a CODEOWNERS file in the repo that you migrated.
 
 Add to the branch protection rule the option `Require review from Code Owners`
