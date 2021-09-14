@@ -1,6 +1,7 @@
 # GitHub Technical Bootcamp hands-on labs repository
 
 Here you can find the hands-on lab instructons for the two day GitHub Technical Bootcamp.
+
 You can find the details for each of the hands-on labs in the sequence of the bootcamp below. 
 
 Day 1:
