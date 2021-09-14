@@ -6,13 +6,5 @@ For this you need to start coding  in Ruby.
 To create a maping you need to create a ruby file that looks as follows:
 ``` ruby
 transform "AzureResourceGroupDeployment@2" do |item|
-    {
-      uses: "azure/arm-deploy@v1",
-      with:
-      {
-        subscriptionId: "#{item['ConnectedServiceName']}",
-        resourceGroupName: "#{item['resourceGroupName']}",
-        template: "#{item['csmFile']}"
-      }
-    }
+   # your ruby code here that produces output
   end
