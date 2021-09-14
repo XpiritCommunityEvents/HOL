@@ -148,7 +148,7 @@ GITHUB_INSTANCE_URL=https://github.com
 Now we can run the commandline and need to pass it the pipeline command. This command also requires to pass in a --target-url, which is the github repo you are targeting. This is the location https://github.com/Microsoft-Bootcamp/<your-repo-name> 
 You also need the pipeline id of the Azure DevOps pipeline. You can fin dthis in the URL of the Azure DevOps project the moment you browse to the pipeline details. See the picture below where to find it:
   
-[finding the pipeline id](images/pipeline-id.png)
+![finding the pipeline id](images/pipeline-id.png)
 
 Then we can run the following command to execute the migration:
 > valet migrate azure-devops pipeline --target-url https://github.com/Microsoft-Bootcamp/<your-repo-name> --pipeline-id ###number from azdo pipeline###
@@ -167,7 +167,7 @@ See https://lostisland.github.io/faraday/middleware/authentication for more usag
 The last line shows you a pull request that got created on the target repository that contains the migrated workflow.
 This will look as follows:
 
-[](images/workflow-pullrequest.png)
+![pull request](images/workflow-pullrequest.png)
 
 Now inspect the pull request and the action workflow that is part of the pull request.
 Accept the pull request and make a change to one of the files in the repository so you trigger the action workflow.
