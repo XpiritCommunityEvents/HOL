@@ -6,7 +6,7 @@ We will start with setting up the tools, use the tools for a dry-run and do a mi
 All the hands-on labs will use the CodeSapces capabillity of GitHub. During the import of the git repository, we more or leass sneaked in the configuration for the codespaces setup. This is done because we included a folder called .devcontainer. This contains the setup of our development environment for this hands-on exersise.
 So before we continue the hands-on lab, goto your repository and start your codespace instance by clicking the button "create new codespace"
 
-![starting codespaces](images/codepaces.png)
+![starting codespaces](images/codespaces.png)
 
 ## Settign up Valet on your development environment.
 
