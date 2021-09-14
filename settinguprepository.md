@@ -45,7 +45,10 @@ So, your command would look something like `git remote add origin https://github
 
 Now we are ready to push the complete repo, including it's history to the GitHub repo.
 For this you can use the command :
->`git push origin main`
+>`git push -u origin main`
+
+> note: if you are asking what is the `-u` option do:
+> The -u option does the following: For every branch that is up to date or successfully pushed, add upstream (tracking) reference, used by argument-less git-pull and other commands. So, after pushing your local branch with -u option, this local branch will be automatically linked with remote branch, and you can use git pull without any arguments
 
 The repository is now migrated from Azure DevOps to GitHub wil full history. In the next part of the bootcamp, we'll look at what is migrated, and what we are missing after the migration.
 
