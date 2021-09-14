@@ -62,12 +62,20 @@ In your GitHub repo goto the settings tab and click the branches option as shown
 Now add a new rule and define which branch you want to protect. e.g. provide the pattern name `main`
 next you select the following options:
 1. `Require pull request reviews before merging`
-2. `Require review from Code Owners`
-3. `Include administrators`
+2. `Include administrators`
 
-**todo: description**
+Now save this Branch Rule and see if it works.
 
-Set up CODEOWNERS
-**todo: description**
+To check if it works, create a change on one of the files that is in the main branch. Just use the portal to make the change and verify that the moment you want to commit the change you see the below indicator that you need to create a new branch before you can commit:
 
-**^^TODO: validate**
+![create branch before commit](images/branch-before-commit.png)
+
+Now create a new branch and create a pull request that enables the code review from someone else in your organization/repo
+
+# if time permits: enforce CODEOWNERS review
+
+if you want to enforce certain teams can only approve parts of the codebase, like a web development team for all the web application code and a docs team for the documentation, you can use the code owners file. We can enforce the code owners need to be part of the review process by adding this to the Branch Protection Rule.
+There is already a CODEOWNERS file in the repo that you migrated.
+
+Add to the branch protection rule the option `Require review from Code Owners`
+Save the branch protection rule and see if you can enforce that if any file is changed in the documents folder, you need someone from the docs team. Work together in the teams chat to find other attendees that you can add to the team to do the review in a pull request.
