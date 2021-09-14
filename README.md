@@ -11,7 +11,7 @@ Day 1:
 Day 2:
 - [Migrating Pipelines form Azure DevOps](migration.md) 
 - Adding Custom Mappings for your migrations
-- Settign up Code Scanning for your repository
+- Setting up Code Scanning for your repository
 - Enabling and using Dependabot on your repository
 - Using CodeSpaces on your repository
 
