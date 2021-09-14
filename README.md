@@ -13,5 +13,5 @@ Day 2:
 - Adding Custom Mappings for your migrations
 - Setting up Code Scanning for your repository
 - Enabling and using Dependabot on your repository
-- Using CodeSpaces on your repository
+- Using Code Spaces on your repository
 
