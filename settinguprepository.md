@@ -52,8 +52,19 @@ For this you can use the command :
 
 The repository is now migrated from Azure DevOps to GitHub wil full history. In the next part of the bootcamp, we'll look at what is migrated, and what we are missing after the migration.
 
-# if time permits:
-Set up a branch rule
+# if time permits: Create a Branch Rule
+By now your repository at github has content and we can now protecting our branches against unwanted direct updates. This is a very common setup in the enterprise.
+In this excersise we will create a branch rule that prevents you to commit to the main branch direct and require you to create a pull request.
+
+In your GitHub repo goto the settings tab and click the branches option as shown here:
+![branch protection rules](images/branch-protection-rules.png)
+
+Now add a new rule and define which branch you want to protect. e.g. provide the pattern name `main`
+next you select the following options:
+1. `Require pull request reviews before merging`
+2. `Require review from Code Owners`
+3. `Include administrators`
+
 **todo: description**
 
 Set up CODEOWNERS
