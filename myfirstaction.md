@@ -1,5 +1,4 @@
-# My first action
-## Creating your first workflow
+# Creating your first Action Workflow
 1. Create a `.github/workflows` directory in your repository on GitHub if this directory does not already exist.
 2. In the `.github/workflows` directory, create a file named `github-actions-demo.yml`.
 3. Copy the following YAML contents into the `github-actions-demo.yml` file:
