@@ -8,7 +8,19 @@ So before we continue the hands-on lab, goto your repository and start your code
 
 ![starting codespaces](images/codespaces.png)
 
-## Settign up Valet on your development environment.
+The first time you create a codespace You will see the following screen.
+
+![creating codespace container](images/settingup-codespaces.png)
+Please wait for this to complete. The reason it takes some more time the first time has to do with the fact the container needs to be build for the first time. Next time you start a codespace you will get access in a few seconds.
+
+When your codespace is ready you will see the full IDE apear in your browser. This is a full visual studio code exeprience in your browser! this looks as follwos:
+![code space ide](images/codespace-ide.png)codespace-ide
+
+The place we will all our work for this hands-on lab is in the terminal window that you can find in the richt bottom part. it should show you a command-line and it is currently in the folder /workspaces/<your-repo-name> (main)
+  
+> note all command-line steps assume the above environment to work. So please ensure this is the case before you start.
+
+## Adding Valet to your development environment.
 
 Valet uses a docker container to do all the work. This container is available the moment you are onboarded to valet.
 Valet consist primaraly out of two thigns we need to setup before we can do some work:
