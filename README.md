@@ -1,8 +1,7 @@
-# GitHub technical bootcamp Hands-on labs repository
+# GitHub Technical Bootcamp hands-on labs repository
 
-Here you can find the hands-on lab instructons for the two day workshop.
-
-You can find the detailed for each Hands-on lab here:
+Here you can find the hands-on lab instructons for the two day GitHubTechnical Bootcamp.
+You can find the details for each of the hands-on labs in the sequence of the bootcamp below. 
 
 - [Setting up your repository](settinguprepository.md)
 - [Creating your first Action Workflow](myfirstaction.md)
