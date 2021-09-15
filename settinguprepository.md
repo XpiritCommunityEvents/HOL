@@ -9,7 +9,7 @@ For the purpose of this bootcamp, we have prepared an Azure DevOps repository fo
 
 **For this bootcamp, please use the following URL: https://dev.azure.com/xpirit/TailWindTraders**
 
-First start with retrieving the URL of the Azure DevOps repository you want to migrate. 
+Normally, you would first start with retrieving the URL of the Azure DevOps repository you want to migrate. For that you would follow the below steps, that are not required  
 1. From your web browser, open the team project for your Azure DevOps organization and choose `Repos`, then `Files`.
 
 ![get clone uri](https://docs.microsoft.com/en-us/azure/devops/repos/git/media/clone-repo/repos-files.png?view=azure-devops)
@@ -52,7 +52,7 @@ For this you can use the command:
 The repository is now migrated from Azure DevOps to GitHub with full history. In the next part of the bootcamp, we'll look at what is migrated, and what we are missing after the migration.
 
 # If time permits: Create a Branch Rule
-By now your repository at github has content and we can now protecting our branches against unwanted direct updates. This is a very common setup in the enterprise.
+By now your repository at GitHub has content and we can now protecting our branches against unwanted direct updates. This is a very common setup in the enterprise.
 In this excersise we will create a branch rule that prevents you to commit to the main branch direct and require you to create a pull request.
 
 In your GitHub repo goto the settings tab and click the branches option as shown here:
