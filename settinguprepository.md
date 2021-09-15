@@ -30,7 +30,7 @@ You should have access to a GitHub Repo in the organization https://github.com/M
 
 Now we need to remove the current origin in the git repo that it is pointing to. For this we enter the following command:
 
-> `git remove origin`. 
+> `git remote remove origin`. 
 
 In our local repo, your main branch is called `master`. Let's rename it to `main`so it matches the expected name in the new target repository at GitHub. for this you enter the command 
 
