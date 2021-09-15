@@ -80,4 +80,22 @@ on:
 ```
 
 ## Create a Matrix build for release and debug
+See: [Workflow Syntax - Jobs - Matrix Strategy](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstrategymatrix)
 
+```
+...
+...
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    
+  strategy:
+    matrix:
+      configuration: [debug, release]
+      
+  steps:
+  - run: echo "🔧 Building the cofiguration ${{ matrix.configuration }}."
+
+...
+...
+```
