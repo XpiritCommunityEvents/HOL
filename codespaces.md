@@ -3,7 +3,7 @@ During this Technical Bootcamp, you have already had some hands-on experience wo
 
 Navigate to your Code Space. If you have not yet started your Code Space, from your repository on the tab `Code`, click the `Code` button, select `Code Spaces` and `New codespace`.
 
-![Code Spaces - Settings](./images/codespacessettings.PNG)
+![Code Spaces - Settings](./images/codespacesextensions.PNG)
 
 Go to `Settings` (located on the bottem left side of your screen) and select `Extensions` 
 
