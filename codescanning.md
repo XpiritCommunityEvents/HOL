@@ -18,7 +18,7 @@ If your project communicates with an external service, you might use a token or 
 
 Secret scanning will scan your entire Git history on all branches present in your GitHub repository for any secrets. Service providers can partner with GitHub to provide their secret formats for scanning. For more information, see "Secret scanning partner program."
 
-If someone checks a secret with a known pattern into a public or private repository on GitHub, secret scanning catches the secret as it's checked in, and helps you mitigate the impact of the leak. Repository administrators are notified about any commit that contains a secret, and they can quickly view all detected secrets in the Security tab for the repository.
+If someone checks a secret with a known pattern into a public or private repository on GitHub, secret scanning catches the secret as it's checked in, and helps you mitigate the impact of the leak. Repository administrators are notified about any that contains a secret, and they can quickly view all detected secrets in the Security tab for the repository.
 
 For GitHub Secret SCanning documentation, please refer to: [https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning](https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning)
 
@@ -38,7 +38,7 @@ After this step, a `codeql-analysis.yml` file is generated for you. For most pro
 
 Once you have commited your changes, you will see the `codeql-analysis.yml` file in the new directory `./github/workflows`.
 
-![Code Scanning - CodeQL Analysis Workflow](./images/codeqlanalysis.PNG)
+![Code Scanning - CodeQL Analysis Workflow](./images/codeqlanalysisyml.PNG)
 
 When you click the file `codeql-analysis.yml`, you get to see the option `View runs`. 
 
@@ -54,7 +54,7 @@ After some minutes, the workflow run will be completed and you will see the stat
 
 Clicking through on the workflow run, by clicking on `Create codeql-analysis.yml`, you can see the details of the workflow run. 
 
-![Code Scanning - CodeQL workflow completed](./images/codeqlworkflowcompleted.PNG)
+![Code Scanning - CodeQL workflow completed](./images/codeqlworkflow_completed.PNG)
 
 Great, now that your CodeQL workflow is completed, we can move on and discover the way your Code Scanning outcomes can be analyzed. 
 
