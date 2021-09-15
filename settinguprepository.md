@@ -18,33 +18,69 @@ Normally, you would first start with retrieving the URL of the Azure DevOps repo
 
 ![copy clone uri](https://docs.microsoft.com/en-us/azure/devops/repos/git/media/get_clone_url.gif?view=azure-devops) 
 
+## Import the repository
+
+Now let us import the repository from Azure DevOps into your GitHub repository. 
+
+Navigate to your repository on GitHub, it should still be completely empty and offer the ability to "Import Code" at the bottom of the page:
+
+![Import Code](./images/import-code.png) 
+
+The next screen will prompt you for the source to import. Use the clone URL for the Azure DevOps Repository you copied in the previous step:
+
+![Import Code - Set Source](./images/import-code-provide-source.png)
+
+Verify that you've selected the correct target repository and click "begin import".
+
+GitHub will now automatically import and optimize the repository and should finish in a moment:
+
+![Import Code - Finished](./images/import-code-finished.png)
+
+Now clone your repository to your local machine with the CLI or with your favorite git client:
+
+```
+git clone https://github.com/Microsoft-Bootcamp/attendee-<yourgh-handle>.git
+```
+
+You can now skip directly to **If time permits: Create a Branch Rule**.
+
 ## Clone the repository 
+Instead of using the automatic import, we can clone the reporitory locally, then push it into GitHub.
+
 Now, let's clone the Azure DevOps repository into the GitHub repository.
 Start a command prompt and move to a location where you want to clone the repo. e.g. c:\sources 
 
 Enter the command 
-> `git clone [PASTE_AZURE_DEVOPS_REPO_URL_HERE]`
+
+```
+git clone [PASTE_AZURE_DEVOPS_REPO_URL_HERE]
+```
 
 Now we have a cloned repository with the full history on your local drive. Next we want to move this repo with the history to the GitHub repo that is available for you.
 You should have access to a GitHub Repo in the organization https://github.com/Microsoft-Bootcamp. This repo has the name `attendee-<yourgithubhandle>`
 
-Now we need to remove the current origin in the git repo that it is pointing to. For this we enter the following command:
-
-> `git remote remove origin`. 
-
 In our local repo, your main branch is called `master`. Let's rename it to `main`so it matches the expected name in the new target repository at GitHub. for this you enter the command 
 
->`git branch -m main`.
+```
+git branch -m main
+```
+
 From this point onwards, your main branch will be called `main` instead of `master`.
 
-Now, we'll add a new remote pointing to your GitHub repository. for this you use the  command 
-> `git remote add origin` followed by the URL of your GitHub repo. 
+Now, we'll change the remote to your GitHub repository. For this you use the command 
 
-So, your command would look something like `git remote add origin https://github.com/Microsoft-Bootcamp/attendee-<yourgh-handle>.git`
+```
+git remote set-url origin {your clone url}
+```
+
+So, your command would look something like `git remote set-url origin https://github.com/Microsoft-Bootcamp/attendee-<yourgh-handle>.git`
 
 Now we are ready to push the complete repo, including it's history to the GitHub repo.
 For this you can use the command:
->`git push -u origin main`
+
+```
+git push -u origin main
+```
 
 > Note: if you are asking what does the `-u` option do:
 > The -u option does the following: For every branch that is up to date or successfully pushed, add upstream (tracking) reference, used by argument-less git-pull and other commands. So, after pushing your local branch with -u option, this local branch will be automatically linked with remote branch, and you can use git pull without any arguments.
