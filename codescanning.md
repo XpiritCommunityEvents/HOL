@@ -83,7 +83,17 @@ GitHub performs secret scanning on public and private repositories for secret pa
 
 You can define up to 20 custom patterns for each private repository, organization, or enterprise account and options to define these are enabled after you enable the `Secret Scanning` feature in your `Security & analysis` settings. We'll not go into the custom patterns in this lab, but for more information refer to: [https://docs.github.com/en/code-security/secret-scanning/defining-custom-patterns-for-secret-scanning](https://docs.github.com/en/code-security/secret-scanning/defining-custom-patterns-for-secret-scanning)
 
+Now that you've set up Secret Scanning, let's understand where you can view the Secret Scanning alerts and ultimately try it out and trigger it ourselves by inserting a connection string in the next parts of the lab exercise.
+
+### Managing Secret Scanning alerts
+When you navigate to the `Security` tab on your repository, and click `Secret Scanning alerts`, you can see the active alerts for Secret Scanning. Here, you can view and close alerts for secrets checked in to your repository.
+
+![Secret Scanning - Alerts](./images/secretscanningalerts.PNG)
+
+[https://docs.github.com/en/code-security/secret-scanning/managing-alerts-from-secret-scanning](https://docs.github.com/en/code-security/secret-scanning/managing-alerts-from-secret-scanning)
+
+When you click on a Secret Scanning alert, you can see it's details.
+
+![Secret Scanning - Alert details](./images/secretscanningalertdetails.PNG)
+
 ### Triggering Secret Scanning by inserting a connection string
-
-
-### Analyzing Secret Scanning alerts/warnings
