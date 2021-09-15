@@ -141,11 +141,11 @@ For this we need to make changes to the .env.local. file or pass in the argument
 Make changes to the .env.local. file and add the following parameters to the file:
   
 ```
-GITHUB_ACCESS_TOKEN=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
+GITHUB_ACCESS_TOKEN=<your github token here>
 GITHUB_INSTANCE_URL=https://github.com
 ```
 
-Now we can run the command line and need to pass it the pipeline command. This command also requires to pass in a --target-url, which is the github repo you are targeting. This is the location https://github.com/Microsoft-Bootcamp/<your-repo-name> 
+Now we can run the command line and need to pass it the pipeline command. This command also requires to pass in a --target-url, which is the GitHub repo you are targeting. This is the location https://github.com/Microsoft-Bootcamp/<your-repo-name> 
 You also need the pipeline id of the Azure DevOps pipeline. You can fin this in the URL of the Azure DevOps project the moment you browse to the pipeline details. See the picture below where to find it:
   
 ![finding the pipeline id](images/pipeline-id.png)
