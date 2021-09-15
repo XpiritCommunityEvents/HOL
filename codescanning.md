@@ -90,10 +90,18 @@ When you navigate to the `Security` tab on your repository, and click `Secret Sc
 
 ![Secret Scanning - Alerts](./images/secretscanningalerts.PNG)
 
-[https://docs.github.com/en/code-security/secret-scanning/managing-alerts-from-secret-scanning](https://docs.github.com/en/code-security/secret-scanning/managing-alerts-from-secret-scanning)
-
 When you click on a Secret Scanning alert, you can see it's details.
 
 ![Secret Scanning - Alert details](./images/secretscanningalertdetails.PNG)
+
+[https://docs.github.com/en/code-security/secret-scanning/managing-alerts-from-secret-scanning](https://docs.github.com/en/code-security/secret-scanning/managing-alerts-from-secret-scanning)
+
+#### Secret Scanning: Alert notifications
+When a new secret is detected, GitHub notifies all users with access to security alerts for the repository according to their notification preferences. You will receive alerts if you are watching the repository, have enabled notifications for security alerts or for all the activity on the repository, are the author of the commit that contains the secret and are not ignoring the repository.
+
+#### Secret Scanning: Securing compromised secrets
+Once a secret has been committed to a repository, you should consider the secret compromised. GitHub recommends the following actions for compromised secrets:
+* For a compromised GitHub personal access token, delete the compromised token, create a new token, and update any services that use the old token. 
+* For all other secrets, first verify that the secret committed to GitHub is valid. If so, create a new secret, update any services that use the old secret, and then delete the old secret.
 
 ### Triggering Secret Scanning by inserting a connection string
