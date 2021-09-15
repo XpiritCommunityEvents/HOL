@@ -2,7 +2,7 @@
 
 Here you can find the hands-on lab instructions for the two day GitHub Technical Bootcamp.
 
-You can find the details for each of the hands-on labs in the sequence of the bootcamp below. 
+You can find the details for each of the hands-on labs in the sequence of the bootcamp below. Use the links to navigate to the respective labs.
 
 Day 1:
 - Exercise 1: [Migrating your repository from Azure DevOps to GitHub](settinguprepository.md)
@@ -15,5 +15,7 @@ Day 2:
 - Exercise 4: [Enabling and using Dependabot on your repository](https://github.com/Microsoft-Bootcamp/HOL/blob/main/dependabot.md)
 - Exercise 5: [Using Code Spaces on your repository](https://github.com/Microsoft-Bootcamp/HOL/blob/main/codespaces.md)
 
-# Contribute back! :octocat:
+# Contribute back! 
 When you find errors or inconsistencies in the lab descriptions, or there are additions you want to contribute, then please make the change and create a pull request so we can adopt this in our next workshop. 
+
+:octocat:
