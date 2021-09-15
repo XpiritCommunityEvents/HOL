@@ -1,19 +1,19 @@
-# Migrating pipelines from Azure DevOps to Github Actions using Valet 
+# Migrating pipelines from Azure DevOps to GitHub Actions using Valet 
 In this hands-on lab you will get a first glance at the tooling that is build to migrate CI/CD solutions to GitHub actions. This tool is called **Valet**.
 
-We will start with setting up the tools, use the tools for a dry-run and do a migration of one pipleline to Azure Devops to get a feel on how the tools work.
+We will start with setting up the tools, use the tools for a dry-run and do a migration of one pipeline to Azure DevOps to get a feel on how the tools work.
 
-All the hands-on labs will use the CodeSapces capabillity of GitHub. During the import of the git repository, we more or leass sneaked in the configuration for the codespaces setup. This is done because we included a folder called .devcontainer. This contains the setup of our development environment for this hands-on exersise.
-So before we continue the hands-on lab, goto your repository and start your codespace instance by clicking the button "create new codespace"
+All the hands-on labs will use the CodeSpaces capability of GitHub. During the import of the git repository, we more or less sneaked in the configuration for the codespaces setup. This is done because we included a folder called .devcontainer. This contains the setup of our development environment for this hands-on exercise.
+So before we continue the hands-on lab, go to your repository and start your Codespace instance by clicking the button "create new Codespace"
 
 ![starting codespaces](images/codespaces.png)
 
-The first time you create a codespace You will see the following screen.
+The first time you create a Codespace You will see the following screen.
 
 ![creating codespace container](images/settingup-codespaces.png)
-Please wait for this to complete. The reason it takes some more time the first time has to do with the fact the container needs to be build for the first time. Next time you start a codespace you will get access in a few seconds.
+Please wait for this to complete. The reason it takes some more time the first time has to do with the fact the container needs to be build for the first time. Next time you start a Codespace you will get access in a few seconds.
 
-When your codespace is ready you will see the full IDE apear in your browser. This is a full Visual Studio Code exeprience in your browser! This looks as follows:
+When your Codespace is ready you will see the full IDE appear in your browser. This is a full Visual Studio Code experience in your browser! This looks as follows:
 ![code space ide](images/codespace-ide.png)codespace-ide
 
 The place where we will do all our work for this hands-on lab is in the terminal window, that you can find in the right bottom part. It should show you a command-line and it is currently in the folder /workspaces/<your-repo-name> (main)
@@ -23,7 +23,7 @@ The place where we will do all our work for this hands-on lab is in the terminal
 ## Adding Valet to your development environment.
 
 Valet uses a Docker container to do all the work. This container is available the moment you are onboarded to Valet.
-Valet consist primaraly out of two things we need to setup before we can do some work:
+Valet consist primarily out of two things we need to setup before we can do some work:
 - a Docker image that we need on our machine
 - a script called Valet, that drives the use of the Docker container on our workstation.
 
@@ -78,12 +78,12 @@ ghcr.io/valet-customers/valet-cli:latest
 ```
 
 Now we want to try to create some migrations of the Azure DevOps project that you can find in the Xpirit Repository (dev.azure.com/xpirit). 
-The Team project name we can use for this excersise is **TailWindTraders**
+The Team project name we can use for this exercise is **TailWindTraders**
 
-> note: please feel free to use your own Azure Devops projects, the lab is more step by step prepared, feel free to go of script here!
+> note: please feel free to use your own Azure DevOps projects, the lab is more step by step prepared, feel free to go of script here!
 
-Now goto the folder **valet** on your local repo in your codespaces IDE.
-In this folder you find the Valet scripts. We already put them on the development environment, this is a step you ave to take when you do this in the future on your own development environment. You can find this script in the valet/customer repo that you should have access to.
+Now go to the folder **valet** on your local repo in your codespaces IDE.
+In this folder you find the Valet scripts. We already put them on the development environment, this is a step you **have** to take when you do this in the future on your own development environment. You can find this script in the valet/customer repo that you should have access to.
   
 Try to run this script. 
 
@@ -131,13 +131,13 @@ Now run the following command:
 This will run the tool with the options you specified in the .env.local file.
 
 The output of this audit run will result in a set of files that got generated to become the future action workflows and a summary page that contains the output of the audit. 
-Here you can see how the migration will happen and how successfull it will be. Note not everything will be migrated and manual fixes are needed to succeed.
+Here you can see how the migration will happen and how successful it will be. Note not everything will be migrated and manual fixes are needed to succeed.
  
 Inspect the file **audit_summary.md** and look at the results of the audit migration
   
 # Execute the migration
-Now we are going to migrate one of the successfull pipelines. 
-For this we need to make changes to the .env.local. file or pass in the arguments at the commandline. 
+Now we are going to migrate one of the successful pipelines. 
+For this we need to make changes to the .env.local. file or pass in the arguments at the command line. 
 Make changes to the .env.local. file and add the following parameters to the file:
   
 ```
@@ -145,8 +145,8 @@ GITHUB_ACCESS_TOKEN=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
 GITHUB_INSTANCE_URL=https://github.com
 ```
 
-Now we can run the commandline and need to pass it the pipeline command. This command also requires to pass in a --target-url, which is the github repo you are targeting. This is the location https://github.com/Microsoft-Bootcamp/<your-repo-name> 
-You also need the pipeline id of the Azure DevOps pipeline. You can fin dthis in the URL of the Azure DevOps project the moment you browse to the pipeline details. See the picture below where to find it:
+Now we can run the command line and need to pass it the pipeline command. This command also requires to pass in a --target-url, which is the github repo you are targeting. This is the location https://github.com/Microsoft-Bootcamp/<your-repo-name> 
+You also need the pipeline id of the Azure DevOps pipeline. You can fin this in the URL of the Azure DevOps project the moment you browse to the pipeline details. See the picture below where to find it:
   
 ![finding the pipeline id](images/pipeline-id.png)
 
@@ -172,5 +172,5 @@ This will look as follows:
 Now inspect the pull request and the action workflow that is part of the pull request.
 Accept the pull request and make a change to one of the files in the repository so you trigger the action workflow.
 
-The result of the action workflow is a succesfull build that creates a set of artifacts that can be used to run a deployment workflow and pick up the artifacts.
+The result of the action workflow is a successful build that creates a set of artifacts that can be used to run a deployment workflow and pick up the artifacts.
   
