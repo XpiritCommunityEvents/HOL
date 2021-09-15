@@ -36,7 +36,36 @@ After this step, a `codeql-analysis.yml` file is generated for you. For most pro
 
 ![Code Scanning - Commit](./images/codescanningcommit.PNG)
 
-### Analyzing Code Scanning outcome
+Once you have commited your changes, you will see the `codeql-analysis.yml` file in the new directory `./github/workflows`.
+
+![Code Scanning - CodeQL Analysis Workflow](./images/codeqlanalysis.PNG)
+
+When you click the file `codeql-analysis.yml`, you get to see the option `View runs`. 
+
+![Code Scanning - CodeQL view runs](./images/codeqlviewruns.PNG)
+
+From here, you can see the list of workflows with the CodeQL workflow and the run history of the CodeQL workflow. In the default CodeQL analysis workflow, code scanning is configured to analyze your code each time you either push a change to the default branch or any protected branches, or raise a pull request against the default branch. As a result, code scanning will now commence. As you can see on the below screenshot, the workflow is currently running.
+
+![Code Scanning - CodeQL run history](./images/codeqlrunhistory.PNG)
+
+After some minutes, the workflow run will be completed and you will see the status being updated.
+
+![Code Scanning - CodeQL views runs (completed)](./images/codeqlviewruns_completed.PNG)
+
+Clicking through on the workflow run, by clicking on `Create codeql-analysis.yml`, you can see the details of the workflow run. 
+
+![Code Scanning - CodeQL workflow completed](./images/codeqlworkflowcompleted.PNG)
+
+Great, now that your CodeQL workflow is completed, we can move on and discover the way your Code Scanning outcomes can be analyzed. 
+
+### Analyzing Code Scanning outcomes
+When you navigate to the `Security` tab on your repository, and click `Code Scanning alerts`, you can see the active alerts for Code Scanning. From this view, you can view, fix, dismiss, or delete alerts for potential vulnerabilities or errors in your project's code.
+
+![Code Scanning - Security Tab](./images/codescanning_securitytab.PNG)
+
+Each alert highlights a problem with the code and the name of the tool that identified it. You can see the line of code that triggered the alert, as well as properties of the alert, such as the severity, security severity, and the nature of the problem. Alerts also tell you when the issue was first introduced. For alerts identified by CodeQL analysis, you will also see information on how to fix the problem.
+
+![Code Scanning - Alerts details](./images/codescanningalertdetails.PNG)
 
 
 ## Secret Scanning 
