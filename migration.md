@@ -13,25 +13,25 @@ The first time you create a codespace You will see the following screen.
 ![creating codespace container](images/settingup-codespaces.png)
 Please wait for this to complete. The reason it takes some more time the first time has to do with the fact the container needs to be build for the first time. Next time you start a codespace you will get access in a few seconds.
 
-When your codespace is ready you will see the full IDE apear in your browser. This is a full visual studio code exeprience in your browser! this looks as follwos:
+When your codespace is ready you will see the full IDE apear in your browser. This is a full Visual Studio Code exeprience in your browser! This looks as follows:
 ![code space ide](images/codespace-ide.png)codespace-ide
 
-The place we will all our work for this hands-on lab is in the terminal window that you can find in the richt bottom part. it should show you a command-line and it is currently in the folder /workspaces/<your-repo-name> (main)
+The place where we will do all our work for this hands-on lab is in the terminal window, that you can find in the right bottom part. It should show you a command-line and it is currently in the folder /workspaces/<your-repo-name> (main)
   
-> note all command-line steps assume the above environment to work. So please ensure this is the case before you start.
+> Note: All command-line steps assume the above environment to work. So please ensure this is the case before you start.
 
 ## Adding Valet to your development environment.
 
-Valet uses a docker container to do all the work. This container is available the moment you are onboarded to valet.
-Valet consist primaraly out of two thigns we need to setup before we can do some work:
-- a docker image that we need on our machine
-- a script called valet, that drives the use of the docker container on our workstation.
+Valet uses a Docker container to do all the work. This container is available the moment you are onboarded to Valet.
+Valet consist primaraly out of two things we need to setup before we can do some work:
+- a Docker image that we need on our machine
+- a script called Valet, that drives the use of the Docker container on our workstation.
 
-Let us get started by settign up the tools so they work.
+Let us get started by setting up the tools so they work.
 
-### Pulling the docker image for valet
+### Pulling the docker image for Valet
 
-In the terminal window in your codespace environment (or in visual studio code if you prefer to use that)
+In the terminal window in your Codespace environment (or in Visual Studio Code if you prefer to use that)
 type at the command-line:
 > docker images
 This should return an empty list of images
@@ -40,7 +40,7 @@ codespace ➜ /workspaces/<your repo name> (main) $ docker images
 REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
   ```
 
-now pull the docker image for valet:
+now pull the Docker image for Valet:
 > $ docker login ghcr.io/valet-customers/valet-cli
 
 >Username: **yourdockerhandle**
@@ -56,7 +56,7 @@ Configure a credential helper to remove this warning. See
 https://docs.docker.com/engine/reference/commandline/login/#credentials-store
   ```
 
-Next we pull the image to the local codespace 
+Next we pull the image to the local Codespace 
 
 >$ docker pull ghcr.io/valet-customers/valet-cli
 
@@ -80,14 +80,14 @@ ghcr.io/valet-customers/valet-cli:latest
 Now we want to try to create some migrations of the Azure DevOps project that you can find in the Xpirit Repository (dev.azure.com/xpirit). 
 The Team project name we can use for this excersise is **TailWindTraders**
 
-> note: please feel free to use your own azure devops projects, the lab is more step by step prepared, feel free to go of script!
+> note: please feel free to use your own Azure Devops projects, the lab is more step by step prepared, feel free to go of script here!
 
 Now goto the folder **valet** on your local repo in your codespaces IDE.
-In this folder you find the valet scripts. We already put them on the development environment, this is a step you ave to take when you do this in the future on your own development environment. You can find this script in the valet/customer repo that you should have access to.
+In this folder you find the Valet scripts. We already put them on the development environment, this is a step you ave to take when you do this in the future on your own development environment. You can find this script in the valet/customer repo that you should have access to.
   
 Try to run this script. 
 
-if it fails with a security message, it is possible the file is not executable. For this run the command:
+If it fails with a security message, it is possible the file is not executable. For this run the command:
 > chmod +x valet
 This should mark it as executable on your local dev container.
 
@@ -116,7 +116,7 @@ Options:
       [--no-telemetry], [--no-no-telemetry]                                  # Boolean value to disallow telemetry.
 ```
 ## Run an audit on the existing Azure DevOps project
-to run valet commands we need to pass in the arguments at each command or we can set up a file called .env.local. We provided this file already in the valet folder. It is most convinient to use this file and only fill in the missing details for Azure DevOps and for GitHub. 
+To run Valet commands we need to pass in the arguments at each command or we can set up a file called .env.local. We provided this file already in the Valet folder. It is most convenient to use this file and only fill in the missing details for Azure DevOps and for GitHub. 
 Add the following parameters to the file:
 ```
 AZURE_DEVOPS_ACCESS_TOKEN=<token will be provided>
@@ -125,18 +125,18 @@ AZURE_DEVOPS_ORGANIZATION=xpirit
 AZURE_DEVOPS_INSTANCE_URL=https://dev.azure.com/xpirit
 ```
 
-now run the following command:
+Now run the following command:
 > $ valet audit azure-devops --output-dir . 
 
 This will run the tool with the options you specified in the .env.local file.
 
-The output of this audit run will result in a set of files that got generated to become the future action workflows and a summary page that contains the autput of the audit. 
-Here you can see how the migration will happen and how successfull it will be. Note not everythign will be migrated and manual fixes are needed to succeed
+The output of this audit run will result in a set of files that got generated to become the future action workflows and a summary page that contains the output of the audit. 
+Here you can see how the migration will happen and how successfull it will be. Note not everything will be migrated and manual fixes are needed to succeed.
  
 Inspect the file **audit_summary.md** and look at the results of the audit migration
   
 # Execute the migration
-Now we are going to migrate on eof the successfull pipelines. 
+Now we are going to migrate one of the successfull pipelines. 
 For this we need to make changes to the .env.local. file or pass in the arguments at the commandline. 
 Make changes to the .env.local. file and add the following parameters to the file:
   
