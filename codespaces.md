@@ -3,9 +3,15 @@ During this Technical Bootcamp, you have already had some hands-on experience wo
 
 Navigate to your Code Space. If you have not yet started your Code Space, from your repository on the tab `Code`, click the `Code` button, select `Code Spaces` and `New codespace`.
 
+![Code Spaces - Settings](./images/codespacessettings.PNG)
+
 Go to `Settings` (located on the bottem left side of your screen) and select `Extensions` 
 
+![Code Spaces - Search for markdown](./images/codespacesmarkdown.PNG)
+
 Search for the term "markdown" and select the "Markdown all in one" extension.
+
+![Code Spaces - Add to devcontainer.json](./images/codespacesaddtodevcontainer.PNG)
 
 Do not click `Install in Codespaces`, as this will only install the extension for now. Instead, click the wheel and select `Add to devcontainer.json`. 
 
