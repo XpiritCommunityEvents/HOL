@@ -4,7 +4,7 @@ This hands-on lab has the goal to show you how you can set up Code Scanning for 
 ## Enabling GitHub Advanced Security on your repository
 Should GitHub Advanced Security not be enabled yet on your repository, you can enable it from the `Settings` menu on your repository, then under `Security & Analysis`, in the section `GitHub Advanced Security`, click `Enable`. Advanced Security should be enabled in order to enable Code Scanning and Secret Scanning.
 
-![Advanced Security - Enable](./images/advancedsecurityenable.png)
+![Advanced Security - Enable](./images/advancedsecurityenable.PNG)
 
 ## More on Code Scanning
 Code scanning is a feature that you use to analyze the code in a GitHub repository to find security vulnerabilities and coding errors. Any problems identified by the analysis are shown in GitHub.
