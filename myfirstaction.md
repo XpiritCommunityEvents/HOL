@@ -1,7 +1,8 @@
 # Creating your first Action Workflow
+1. Work inside your current repository `Microsoft-Bootcamp/attendee-<your-github-handle>`
 1. Create a `.github/workflows` directory in your repository on GitHub if this directory does not already exist.
-2. In the `.github/workflows` directory, create a file named `github-actions-demo.yml`.
-3. Copy the following YAML contents into the `github-actions-demo.yml` file:
+1. In the `.github/workflows` directory, create a file named `github-actions-demo.yml`.
+1. Copy the following YAML contents into the `github-actions-demo.yml` file:
 ```YAML
 name: GitHub Actions Demo
 on: [push]

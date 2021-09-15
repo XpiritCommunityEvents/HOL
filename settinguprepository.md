@@ -45,7 +45,7 @@ git clone https://github.com/Microsoft-Bootcamp/attendee-<your-github-handle>.gi
 You can now skip directly to **If time permits: Create a Branch Rule**.
 
 ## Clone the repository 
-Instead of using the automatic import, we can clone the reporitory locally, then push it into GitHub.
+Instead of using the automatic import, we can clone the repository locally, then push it into GitHub.
 
 Now, let's clone the Azure DevOps repository into the GitHub repository.
 Start a command prompt and move to a location where you want to clone the repo. e.g. c:\sources 
