@@ -51,6 +51,19 @@ For example, you can see the list of files in your repository:
 
 ## Only trigger workflow when a change is made to the website
 
+See: [Workflow syntax for github actions - on push/pull request paths.](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#onpushpull_requestpaths)
+```
+name: GitHub Actions Demo
+on:
+  push:
+    paths:
+    - 'TailwindTraders.Website/**/*'
+jobs:
+
+...
+...
+```
+
 ## Only trigger workflow on new issue created
 
 ## Create a Matrix build for release and debug
