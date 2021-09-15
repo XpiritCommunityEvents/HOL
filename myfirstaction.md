@@ -51,7 +51,7 @@ For example, you can see the list of files in your repository:
 
 ## Only trigger workflow when a change is made to the website
 
-See: [Workflow syntax for github actions - on push/pull request paths.](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#onpushpull_requestpaths)
+See: [Workflow syntax for github actions - on push/pull - request paths.](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#onpushpull_requestpaths)
 ```
 name: GitHub Actions Demo
 on:
@@ -65,6 +65,19 @@ jobs:
 ```
 
 ## Only trigger workflow on new issue created
+
+See: [Webhook events and payloads - Issues](https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads#issues)
+```
+...
+...
+
+on:
+  issues:
+    types: [opened]
+
+...
+...
+```
 
 ## Create a Matrix build for release and debug
 
