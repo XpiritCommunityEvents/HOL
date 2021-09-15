@@ -24,7 +24,7 @@ For GitHub Secret SCanning documentation, please refer to: [https://docs.github.
 
 ## Code Scanning
 ### Enabling the Code Scanning functionality
-To enable GitHub Code Scanning, please navigate to the `Settings` of your repository, click `Security & analysis` click `Set up` for the `code Scanning` feature.
+To enable GitHub Code Scanning, please navigate to the `Settings` of your repository, click `Security & analysis` click `Set up` for the `Code Scanning` feature.
 
 ![Code Scanning - Set up](./images/codescanningsetup.PNG)
 
@@ -67,10 +67,21 @@ Each alert highlights a problem with the code and the name of the tool that iden
 
 ![Code Scanning - Alerts details](./images/codescanningalertdetails.PNG)
 
+For more detailed information on managing the Code Scanning alerts, refer to: [https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/managing-code-scanning-alerts-for-your-repository](https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/managing-code-scanning-alerts-for-your-repository)
 
 ## Secret Scanning 
 ### Enabling Secret Scaning functionality
+To enable GitHub Secret Scanning, please navigate to the `Settings` of your repository, click `Security & analysis` click `Enable` for the `Secret Scanning` feature.
 
+![Secret Scanning - Enable](./images/secretscanningenable.PNG)
+
+Secret Scanning is now enabled for your repository. 
+
+GitHub performs secret scanning on public and private repositories for secret patterns provided by GitHub and GitHub partners. However, there can be situations where you want to scan for other secret patterns in your private repositories. For example, you might have a secret pattern that is internal to your organization. For these situations, you can define custom secret scanning patterns in your enterprise, organization, or private repository on GitHub.
+
+![Secret Scanning - Custom Patterns](./images/secretscanningcustompatterns.PNG)
+
+You can define up to 20 custom patterns for each private repository, organization, or enterprise account and options to define these are enabled after you enable the `Secret Scanning` feature in your `Security & analysis` settings. We'll not go into the custom patterns in this lab, but for more information refer to: [https://docs.github.com/en/code-security/secret-scanning/defining-custom-patterns-for-secret-scanning](https://docs.github.com/en/code-security/secret-scanning/defining-custom-patterns-for-secret-scanning)
 
 ### Triggering Secret Scanning by inserting a connection string
 
