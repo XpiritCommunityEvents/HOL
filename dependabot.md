@@ -39,7 +39,7 @@ You can use reviewers and assignees to specify reviewers and assignees for all p
 
 The example dependabot.yml file below changes the npm configuration so that all pull requests opened with version and security updates for npm will have two reviewers and one assignee.
 
-...
+```
 # dependabot.yml file with
 # reviews and an assignee for all npm pull requests
 
@@ -57,7 +57,7 @@ updates:
     # Raise all npm pull requests with an assignee
     assignees:
       - "user-name"
-...
+```
 
 Now, go ahead and try to always assign Dependabot alerts to yourself using configuration via the `dependabot.yml` file.
 
