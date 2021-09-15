@@ -1,5 +1,5 @@
 # Creating a custom mapping to override the default behavior or non existing mappings
-In this lab you will create a custom plugin that transforms some of the exising migration mapping and replace it by your own mapping. 
+In this lab you will create a custom plugin that transforms some of the existing migration mapping and replace it by your own mapping. 
 For this you need to start coding in Ruby.
 
 ## Creating a mapping
@@ -32,7 +32,7 @@ transform "DotNetCoreCLI@2" do |item|
    puts item
   end
 ```  
-And then run a valet commandline where we pass in the custom mapping like this:
+And then run a valet command line where we pass in the custom mapping like this:
 > `$ valet migrate azure-devops pipeline --target-url https://github.com/Microsoft-Bootcamp/<yourreponame> --pipeline-id ### --custom-transformers plugin/DotNetCoreCLI.rb `
 
 the output will show the following:
