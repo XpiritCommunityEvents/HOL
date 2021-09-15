@@ -9,6 +9,8 @@ transform "azuredevopstaskname" do |item|
    # your ruby code here that produces output
   end
 ```  
+Create a new Folder with the name plugin and create the new file in that folder.
+
 If we look at the transformation that was generated for our CI pipeline, we have seen the transformation does not take into account the fact we specified a wildcard pattern to match any of the csproj files we might have in our repo. This now results in a workflow that fails the build if we accept the default mapping.
 
 Let's see if we can fix this by providing an alternative.
