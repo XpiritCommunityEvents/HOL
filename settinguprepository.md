@@ -1,4 +1,4 @@
-# Migrating your repository from AzureDevops
+# Migrating your repository from Azure Devops
 This hands-on lab has the goal to show you how you can migrate an existing Azure DevOps git repository to GitHub. This is the first step that needs to be finished fo all the other labs to succeed. 
 
 For this bootcamp, we have prepared a public Azure DevOps repository for you and created a private GitHub repository for you.
