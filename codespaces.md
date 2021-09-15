@@ -15,6 +15,8 @@ Search for the term "markdown" and select the "Markdown all in one" extension.
 
 Do not click `Install in Codespaces`, as this will only install the extension for now. Instead, click the wheel and select `Add to devcontainer.json`. 
 
+![Code Spaces - Add to devcontainer.json](./images/codespacesdevcontainer.PNG)
+
 You'll get a pop-up stating "We've noticed a change to the devcontainer configuration. Rebuild the container to apply them now". So, you will need to rebuild the container. Therefore, you navigate to the `devcontainer.json` file, click on the `...` and click `Build`.
 
 Great job. :thumbsup: You've now added an extension to the Code Spaces container in a way that will ensure this extension is always available when you open your Code Space. 
