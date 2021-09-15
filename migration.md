@@ -14,7 +14,7 @@ The first time you create a Codespace You will see the following screen.
 Please wait for this to complete. The reason it takes some more time the first time has to do with the fact the container needs to be build for the first time. Next time you start a Codespace you will get access in a few seconds.
 
 When your Codespace is ready you will see the full IDE appear in your browser. This is a full Visual Studio Code experience in your browser! This looks as follows:
-![code space ide](images/codespace-ide.png)codespace-ide
+![code space ide](images/codespace-ide.png)
 
 The place where we will do all our work for this hands-on lab is in the terminal window, that you can find in the right bottom part. It should show you a command-line and it is currently in the folder /workspaces/<your-repo-name> (main)
   
@@ -24,8 +24,8 @@ The place where we will do all our work for this hands-on lab is in the terminal
 
 Valet uses a Docker container to do all the work. This container is available the moment you are onboarded to Valet.
 Valet consist primarily out of two things we need to setup before we can do some work:
-- a Docker image that we need on our machine
-- a script called Valet, that drives the use of the Docker container on our workstation.
+- A Docker image that we need on our machine
+- A script called Valet, that drives the use of the Docker container on our workstation.
 
 Let us get started by setting up the tools so they work.
 
@@ -43,13 +43,13 @@ REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
 now pull the Docker image for Valet:
 > $ docker login ghcr.io/valet-customers/valet-cli
 
->Username: **yourdockerhandle**
+>Username: **your-github-handle**
 
 >Password: **your github personal access token here**
 
 expected output:
 ```
-Username: <yourgithubhandle>
+Username: <your-github-handle>
 Password: *******
 WARNING! Your password will be stored unencrypted in /home/codespace/.docker/config.json.
 Configure a credential helper to remove this warning. See
@@ -78,7 +78,7 @@ ghcr.io/valet-customers/valet-cli:latest
 ```
 
 Now we want to try to create some migrations of the Azure DevOps project that you can find in the Xpirit Repository (dev.azure.com/xpirit). 
-The Team project name we can use for this exercise is **TailWindTraders**
+The Team project name we can use for this exercise is **TailWindTraders**.
 
 > note: please feel free to use your own Azure DevOps projects, the lab is more step by step prepared, feel free to go of script here!
 
