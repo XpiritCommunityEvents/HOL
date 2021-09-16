@@ -18,6 +18,6 @@ Do not click `Install in Codespaces`, as this will only install the extension fo
 ![Code Spaces - Add to devcontainer.json](./images/codespacesdevcontainer.PNG)
 
 You'll get a pop-up stating "We've noticed a change to the devcontainer configuration. Rebuild the container to apply them now". So, you will need to rebuild the container. 
-Click on the `Rebuild now` option on the pop-up. If you missed this, you can ofcourse still manually start a rebuild. Open the Command Palette (ctrl-shift-p/cmd-shift-p) in your Codespace and type "Rebuild Codespace". [More onformation can be found here.](https://docs.github.com/en/codespaces/customizing-your-codespace/configuring-codespaces-for-your-project#applying-changes-to-your-configuration).
+Click on the `Rebuild now` option on the pop-up. If you missed this, you can ofcourse still manually start a rebuild. Open the Command Palette (ctrl-shift-p/cmd-shift-p) in your Codespace and type "Rebuild Codespace". [More information can be found here.](https://docs.github.com/en/codespaces/customizing-your-codespace/configuring-codespaces-for-your-project#applying-changes-to-your-configuration).
 
 Great job. :thumbsup: You've now added an extension to the Code Spaces container in a way that will ensure this extension is always available when you open your Code Space. So, next time you open your Code Space - this extension will be available without any manual intervention.
