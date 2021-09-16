@@ -5,21 +5,7 @@ We will start with setting up the tools, use the tools for a dry-run and do a mi
 
 All the hands-on labs will use the CodeSpaces capability of GitHub. During the import of the git repository, we more or less sneaked in the configuration for the codespaces setup. This is done because we included a folder called .devcontainer. This contains the setup of our development environment for this hands-on exercise.
 
-The container needs access to the Valet tooling, which is stored in the GitHub Container Registry. First we'll need to configure the correct secrets so the codespace can use your credentials to download valet:
-
-Codespaces stores the configuration to pull these images in the Codespaces secrets tab in the github repository:
-
-![Codespaces secrets](images/code-spaces-secrets.png)
-
-You need a Personal Access Token with at least `Packages (Read)` permissions:
-
-![Packages (Read) PAT](images/create-ghcr-pat.png)
-
-Then configure 3 secrets in the codespaces secrets tab in your repository settings:
-
- * GHCR_CONTAINER_REGISTRY_USERNAME: your-github-handle
- * GHCR_CONTAINER_REGISTRY_PASSWORD: your-personal-access-token
- * GHCR_CONTAINER_REGISTRY_SERVER: ghcr.io
+The container needs access to the Valet tooling, which is stored in the GitHub Container Registry. These secrets are already preconfigured in at the organization level.
 
 Now before we continue the hands-on lab, go to your repository and start your Codespace instance by clicking the button "create new Codespace"
 
@@ -66,7 +52,13 @@ ghcr.io/valet-customers/valet-cli   latest    f4a34ec3baea   18 hours ago   141M
   
 The codespace you're using has already pulled the `valet-cli` image if your github user has the permissions to do so. 
 
-If codespaces was unable to pull the image you can try to pull it manually:
+If codespaces was unable to pull the image you can try to pull it manually.
+
+You need a Personal Access Token with at least `Packages (Read)` permissions:
+
+![Packages (Read) PAT](./images/create-ghcr-pat.png)
+
+Then you can run:
 
 ```
 $ docker login ghcr.io/valet-customers/valet-cli
