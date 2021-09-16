@@ -145,13 +145,14 @@ GITHUB_ACCESS_TOKEN=<your github token here>
 GITHUB_INSTANCE_URL=https://github.com
 ```
 
-Now we can run the command line and need to pass it the pipeline command. This command also requires to pass in a --target-url, which is the GitHub repo you are targeting. This is the location https://github.com/Microsoft-Bootcamp/<your-repo-name> 
+Now we can run the command line and need to pass it the pipeline command. This command also requires to pass in a --target-url, which is the GitHub repo you are targeting. This is the location https://github.com/Microsoft-Bootcamp/<your-repo-name&gt;.  
 You also need the pipeline id of the Azure DevOps pipeline. You can fin this in the URL of the Azure DevOps project the moment you browse to the pipeline details. See the picture below where to find it:
   
 ![finding the pipeline id](images/pipeline-id.png)
 
 Then we can run the following command to execute the migration:
-> valet migrate azure-devops pipeline --target-url https://github.com/Microsoft-Bootcamp/<your-repo-name> --pipeline-id ###number from azdo pipeline###
+> valet migrate azure-devops pipeline --target-url https://github.com/Microsoft-Bootcamp/<your-repo-name&gt; --pipeline-id ###number from azdo pipeline###
+
 You will find the following results:
 ```
 [2021-09-14 11:45:04] Logs: 'log/valet-20210914-114504.log'                                                                                     
@@ -170,7 +171,7 @@ This will look as follows:
 ![pull request](images/workflow-pullrequest.png)
 
 Now inspect the pull request and the action workflow that is part of the pull request.
-Accept the pull request and make a change to one of the files in the repository so you trigger the action workflow.
+Accept the pull request and run the workflow manually.
 
 The result of the action workflow is a successful build that creates a set of artifacts that can be used to run a deployment workflow and pick up the artifacts.
   
