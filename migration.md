@@ -171,7 +171,7 @@ This will look as follows:
 ![pull request](images/workflow-pullrequest.png)
 
 Now inspect the pull request and the action workflow that is part of the pull request.
-Accept the pull request and make a change to one of the files in the repository so you trigger the action workflow.
+Accept the pull request and run the workflow manually.
 
 The result of the action workflow is a successful build that creates a set of artifacts that can be used to run a deployment workflow and pick up the artifacts.
   
