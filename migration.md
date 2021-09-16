@@ -151,7 +151,7 @@ You also need the pipeline id of the Azure DevOps pipeline. You can fin this in 
 ![finding the pipeline id](images/pipeline-id.png)
 
 Then we can run the following command to execute the migration:
-> valet migrate azure-devops pipeline --target-url https://github.com/Microsoft-Bootcamp/<your-repo-name&gt; --pipeline-id ###number from azdo pipeline###
+> valet migrate azure-devops pipeline --target-url https://github.com/Microsoft-Bootcamp/your-repo-name; --pipeline-id ###number from azdo pipeline###
 
 You will find the following results:
 ```
