@@ -145,13 +145,13 @@ GITHUB_ACCESS_TOKEN=<your github token here>
 GITHUB_INSTANCE_URL=https://github.com
 ```
 
-Now we can run the command line and need to pass it the pipeline command. This command also requires to pass in a --target-url, which is the GitHub repo you are targeting. This is the location https://github.com/Microsoft-Bootcamp/<your-repo-name> 
+Now we can run the command line and need to pass it the pipeline command. This command also requires to pass in a --target-url, which is the GitHub repo you are targeting. This is the location https://github.com/Microsoft-Bootcamp/<your-repo-name&gt;.  
 You also need the pipeline id of the Azure DevOps pipeline. You can fin this in the URL of the Azure DevOps project the moment you browse to the pipeline details. See the picture below where to find it:
   
 ![finding the pipeline id](images/pipeline-id.png)
 
 Then we can run the following command to execute the migration:
-> valet migrate azure-devops pipeline --target-url https://github.com/Microsoft-Bootcamp/<your-repo-name> --pipeline-id ###number from azdo pipeline###
+> valet migrate azure-devops pipeline --target-url https://github.com/Microsoft-Bootcamp/<your-repo-name&gt; --pipeline-id ###number from azdo pipeline###
 
 You will find the following results:
 ```
