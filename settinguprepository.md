@@ -53,39 +53,41 @@ Start a command prompt and move to a location where you want to clone the repo. 
 Enter the command 
 
 ```
-git clone [PASTE_AZURE_DEVOPS_REPO_URL_HERE]
+git clone --mirror [PASTE_AZURE_DEVOPS_REPO_URL_HERE] 
 ```
 
 Now we have a cloned repository with the full history on your local drive. Next we want to move this repo with the history to the GitHub repo that is available for you.
 You should have access to a GitHub Repo in the organization https://github.com/Microsoft-Bootcamp. This repo has the name `attendee-<your-github-handle>`
 
-In our local repo, your main branch is called `master`. Let's rename it to `main`so it matches the expected name in the new target repository at GitHub. for this you enter the command 
-
-```
-git branch -m main
-```
-
-From this point onwards, your main branch will be called `main` instead of `master`.
-
 Now, we'll change the remote to your GitHub repository. For this you use the command 
 
 ```
-git remote set-url origin {your clone url}
+cd TailwindTraders-Website.git
+git remote add github {your clone url}
 ```
 
-So, your command would look something like `git remote set-url origin https://github.com/Microsoft-Bootcamp/attendee-<your-github-handle>.git`
+So, your command would look something like `git remote add github https://github.com/Microsoft-Bootcamp/attendee-<your-github-handle>.git`
 
-Now we are ready to push the complete repo, including it's history to the GitHub repo.
+Now we are ready to push the complete repo, including it's history, branches and tags to the GitHub repo.
 For this you can use the command:
 
 ```
-git push -u origin main
+git push --mirror github
 ```
 
-> Note: if you are asking what does the `-u` option do:
-> The -u option does the following: For every branch that is up to date or successfully pushed, add upstream (tracking) reference, used by argument-less git-pull and other commands. So, after pushing your local branch with -u option, this local branch will be automatically linked with remote branch, and you can use git pull without any arguments.
+> NOTE: In case you had already initialized your repo over on github, you can force the code into the repo by adding `-f`. **This will overwrite your repositosy and its contents!**
+> 
+> ```
+> git push --mirror -f github
+> ```
 
 The repository is now migrated from Azure DevOps to GitHub with full history. In the next part of the bootcamp, we'll look at what is migrated, and what we are missing after the migration.
+
+As you may have noticed the mirror clone did not contain a workingfolder with the main branch checked out. If you want to have a local working copy, you'll have to create a new clone that isn't a bare/mirror-clone. The simplest solution in our case is to simply delete the `TailwindTraders-Website.git` directory and clone the repository again:
+
+```
+git clone https://github.com/Microsoft-Bootcamp/attendee-<your-github-handle>.git
+```
 
 # If time permits: Create a Branch Rule
 By now your repository at GitHub has content and we can now protecting our branches against unwanted direct updates. This is a very common setup in the enterprise.
