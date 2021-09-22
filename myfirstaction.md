@@ -1,4 +1,7 @@
 # Creating your first Action Workflow
+
+> Before you start with this lab, please remove the branch rule, so you can commit to the main branch without a pull request to speed up the process :smirk:
+
 1. Work inside your current repository `Microsoft-Bootcamp/attendee-<your-github-handle>`
 1. Create a `.github/workflows` directory in your repository on GitHub if this directory does not already exist.
 1. In the `.github/workflows` directory, create a file named `github-actions-demo.yml`.
