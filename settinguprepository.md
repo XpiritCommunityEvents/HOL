@@ -89,7 +89,7 @@ As you may have noticed the mirror clone did not contain a workingfolder with th
 git clone https://github.com/Microsoft-Bootcamp/attendee-<your-github-handle>.git
 ```
 
-# If time permits: Create a Branch Rule
+# Create a Branch Rule
 By now your repository at GitHub has content and we can now protecting our branches against unwanted direct updates. This is a very common setup in the enterprise.
 In this excursive we will create a branch rule that prevents you to commit to the main branch direct and require you to create a pull request.
 
@@ -112,7 +112,21 @@ Now, create a new branch and create a pull request that enables the code review 
 # If time permits: enforce CODEOWNERS review
 
 If you want to enforce certain teams can only approve parts of the codebase, like a web development team for all the web application code and a docs team for the documentation, you can use the code owners file. We can enforce the code owners need to be part of the review process by adding this to the Branch Protection Rule.
-There is already a CODEOWNERS file in the repo that you migrated.
+There is already a CODEOWNERS file in the repo that you migrated. It has the following contents:
 
-Add to the branch protection rule the option `Require review from Code Owners`
-Save the branch protection rule and see if you can enforce that if any file is changed in the documents folder, you need someone from the docs team. Work together in the teams chat to find other attendees that you can add to the team to do the review in a pull request.
+```
+# Example, any change in this repo 
+# will require approval from @vriesmarcel
+# * @vriesmarcel
+
+# Any change inside the `/Documents` directory
+# will require approval from anyone in the organization fluentbytes and the team docsteam
+# /Documents @fluentbytes/docsteam
+# Create your own rules below this line without the # sign
+```
+Now change the file so it defines the folder `/Source/Tailwind.Traders.Web` has a team as owner. All attendees of todays technical workshop are part of a team that we set up. this team has the following naming convention: Attendees_ddMM where dd stands for the day of the month of the workshop (with leading 0 so it is always two digits) and MM stands for the month number. So october 6 is then: `Attendees_0610`
+
+After setting up the file, commit it to the main branch.
+Next goto the  branch protection rules and for the main branch select the option `Require review from Code Owners`
+
+Save the branch protection rule and make a change to e.g. the startup.cs file and see if you can commit the changes to the main branch. Ask one of the other attendees to review the pull request you created and see if it then is allowed to approve and merge the pullrequest. Please use the teams chat to find a colleague who can approve your pull request. If you can't find anyone, ask the instructors. 
