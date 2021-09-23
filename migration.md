@@ -101,7 +101,7 @@ The Team project name we can use for this exercise is **TailWindTraders**.
 
 > Note: please feel free to use your own Azure DevOps projects, the lab is more step by step prepared, feel free to go of script here!
 
-Now change directory to the folder `valet` on your local repo in your codespaces IDE. This is where we have pre-created a configuration file for the migration. A script to run valet has been pre-loaded into your codespace.
+In your terminal, change directory to the folder `valet` on your local repo in your codespaces IDE. This is where we have pre-created a configuration file for the migration. A script to run valet has been pre-loaded into your codespace.
   
 > Note: If you're working in your own development environment, make sure you [obtain the latest version of `valet` and `valet-update`](https://github.com/valet-customers/distribution/tree/main/scripts). You may have change the permissions on these scripts to make them executable:
 > ```
