@@ -18,7 +18,7 @@ To enable GitHub Code Scanning, please navigate to the `Settings` of your reposi
 
 ![Code Scanning - Set up](./images/codescanningsetup.PNG)
 
-You'll be directed to the `Get started with Code Scanning` form, from where you can set up code scanning to use the CodeQL product maintained by GitHub or a third-party code scanning tool. For this lab, we'll pick the CodeQL product. To enable this, you'll click the `Set up this workflow` for the `CodeQL Analysis` product maintened by Github.
+You'll be directed to the `Get started with Code Scanning` form, from where you can set up code scanning to use the *CodeQL Analysis* product maintained by GitHub or a third-party code scanning tool. For this lab, we'll pick the CodeQL product. To enable this, you'll click the `Set up this workflow` for the `CodeQL Analysis` product maintained by Github.
 
 ![Code Scanning - Get started](./images/getstartedwithcodescanning.PNG)
 
