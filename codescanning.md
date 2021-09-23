@@ -22,11 +22,11 @@ You'll be directed to the `Get started with Code Scanning` form, from where you 
 
 ![Code Scanning - Get started](./images/getstartedwithcodescanning.PNG)
 
-After this step, a `codeql-analysis.yml` file is generated for you. For most projects, this workflow file will not need changing; you simply need to commit it to your repository. 
+After this step, a `codeql-analysis.yml` file is generated for you. For most projects, this workflow file will not need changes; you can simply commit it to your repository. 
 
 ![Code Scanning - Commit](./images/codescanningcommit.PNG)
 
-Once you have commited your changes, you will see the `codeql-analysis.yml` file in the new directory `./github/workflows`.
+Once your changes are committed, you will see the `codeql-analysis.yml` file in the new directory `./github/workflows`.
 
 ![Code Scanning - CodeQL Analysis Workflow](./images/codeqlanalysisyml.PNG)
 
