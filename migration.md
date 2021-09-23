@@ -7,7 +7,7 @@ All the hands-on labs will use the CodeSpaces capability of GitHub. During the i
 
 The container needs access to the Valet tooling, which is stored in the GitHub Container Registry. These secrets are already preconfigured in at the organization level.
 
-Now before we continue the hands-on lab, go to your repository and start your Codespace instance by clicking the button "create new Codespace"
+Now before we continue the hands-on lab, go to your repository and start your Codespace instance by clicking the button `Code`, then the tab `Codespaces` and select `New Codespace`.
 
 ![starting codespaces](images/codespaces.png)
 
@@ -66,7 +66,7 @@ Username: **your-github-handle**
 Password: **your github personal access token here**
 ```
 
-expected output:
+The expected output would be:
 ```
 Username: <your-github-handle>
 Password: *******
@@ -96,14 +96,14 @@ Status: Downloaded newer image for ghcr.io/valet-customers/valet-cli:latest
 ghcr.io/valet-customers/valet-cli:latest
 ```
 
-Now we want to try to create some migrations of the Azure DevOps project that you can find in the Xpirit Repository (dev.azure.com/xpirit). 
+Now, we want to try to create some migrations of the Azure DevOps project that you can find in the Xpirit Repository (dev.azure.com/xpirit). 
 The Team project name we can use for this exercise is **TailWindTraders**.
 
-> note: please feel free to use your own Azure DevOps projects, the lab is more step by step prepared, feel free to go of script here!
+> Note: please feel free to use your own Azure DevOps projects, the lab is more step by step prepared, feel free to go of script here!
 
-Now go to the folder `valet` on your local repo in your codespaces IDE. This is where we have pre-created a configuration file for the migration. A script to run valet has been pre-loaded into your codespace.
+Now change directory to the folder `valet` on your local repo in your codespaces IDE. This is where we have pre-created a configuration file for the migration. A script to run valet has been pre-loaded into your codespace.
   
-> NOTE: If you're working in your own development environment, make sure you [obtain the latest version of `valet` and `valet-update`](https://github.com/valet-customers/distribution/tree/main/scripts). You may have change the permissions on these scripts to make them executable:
+> Note: If you're working in your own development environment, make sure you [obtain the latest version of `valet` and `valet-update`](https://github.com/valet-customers/distribution/tree/main/scripts). You may have change the permissions on these scripts to make them executable:
 > ```
 > chmod +x valet
 > chmod +x valet-update
@@ -136,7 +136,7 @@ Options:
   
 ## Run an audit on the existing Azure DevOps project
   
-To run Valet commands we need to pass in the arguments at each command or we can set up a file called .env.local. We provided this file already in the Valet folder. It is most convenient to use this file and only fill in the missing details for Azure DevOps and for GitHub. 
+To run Valet commands we need to pass in the arguments at each command or we can set up a file called `.env.local`. We provided this file already in the Valet folder. It is most convenient to use this file and only fill in the missing details for Azure DevOps and for GitHub. 
   
 Add the following parameters to the file:
   
@@ -147,7 +147,7 @@ AZURE_DEVOPS_ORGANIZATION=xpirit
 AZURE_DEVOPS_INSTANCE_URL=https://dev.azure.com/xpirit
 ```
 
-Now run the following command:
+Now, run the following command:
   
 ```
 valet audit azure-devops --output-dir . 
@@ -156,28 +156,28 @@ valet audit azure-devops --output-dir .
 This will run the tool with the options you specified in the `.env.local` file.
 
 The output of this audit run will result in a set of files that got generated to become the future action workflows and a summary page that contains the output of the audit. 
-Here you can see how the migration will happen and how successful it will be. Note not everything will be migrated and manual fixes are needed to succeed.
+Here you can see how the migration will happen and how successful it will be. Note that not everything will be migrated and manual fixes are needed to succeed.
  
 Inspect the file `audit_summary.md` and look at the results of the audit migration
   
 # Execute the migration
   
 Now we are going to migrate one of the successful pipelines. 
-For this we need to make changes to the .env.local. file or pass in the arguments at the command line. 
-Make changes to the .env.local. file and add the following parameters to the file:
+For this we need to make changes to the `.env.local.` file or pass in the arguments at the command line. 
+Make changes to the `.env.local.` file and add the following parameters to the file:
   
 ```
 GITHUB_ACCESS_TOKEN=<your github token here>
 GITHUB_INSTANCE_URL=https://github.com
 ```
 
-Now we can run the command line and need to pass it the pipeline command. This command also requires to pass in a --target-url, which is the GitHub repo you are targeting. This is the location https://github.com/Microsoft-Bootcamp/&lt;your-repo-name&gt;.  
-You also need the pipeline id of the Azure DevOps pipeline. You can fin this in the URL of the Azure DevOps project the moment you browse to the pipeline details. See the picture below where to find it:
+Now, we can run the command line and need to pass it the pipeline command. This command also requires to pass in a --target-url, which is the GitHub repo you are targeting. This is the location https://github.com/Microsoft-Bootcamp/&lt;your-repo-name&gt;.  
+You also need the pipeline id of the Azure DevOps pipeline. You can find this in the URL of the Azure DevOps project the moment you browse to the pipeline details. Refer to the screenshot below where to find it:
   
 ![finding the pipeline id](images/pipeline-id.png)
 
 Then we can run the following command to execute the migration:
-> valet migrate azure-devops pipeline --target-url https://github.com/Microsoft-Bootcamp/your-repo-name; --pipeline-id ###number from azdo pipeline###
+> valet migrate azure-devops pipeline --target-url https://github.com/Microsoft-Bootcamp/your-repo-name; --pipeline-id ###number from AzDo pipeline###
 
 You will find the following results:
   
@@ -197,7 +197,7 @@ This will look as follows:
 
 ![pull request](images/workflow-pullrequest.png)
 
-Now inspect the pull request and the action workflow that is part of the pull request.
+Now, inspect the pull request and the action workflow that is part of the pull request.
 Accept the pull request and run the workflow manually.
 
 The result of the action workflow is a successful build that creates a set of artifacts that can be used to run a deployment workflow and pick up the artifacts.
