@@ -3,7 +3,7 @@ In this hands-on lab you will get a first glance at the tooling that is build to
 
 We will start with setting up the tools, use the tools for a dry-run and do a migration of one pipeline to Azure DevOps to get a feel on how the tools work.
 
-All the hands-on labs will use the CodeSpaces capability of GitHub. During the import of the git repository, we more or less sneaked in the configuration for the codespaces setup. This is done because we included a folder called .devcontainer. This contains the setup of our development environment for this hands-on exercise.
+All the hands-on labs will use the CodeSpaces capability of GitHub. During the import of the git repository, we more or less sneaked in the configuration for the codespaces setup. This is done because we included a folder called `.devcontainer`. This contains the setup of our development environment for this hands-on exercise.
 
 The container needs access to the Valet tooling, which is stored in the GitHub Container Registry. These secrets are already preconfigured in at the organization level.
 
