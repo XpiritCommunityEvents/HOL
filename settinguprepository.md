@@ -100,7 +100,7 @@ Now clone your repository to your local machine with the CLI or with your favori
 git clone https://github.com/Microsoft-Bootcamp/attendee-<your-github-handle>.git
 ```
 
-You can now skip directly to [**Create a Branch Rule**](#create-a-branch-rule).
+You can now skip directly to **[Create a Branch Rule](#create-a-branch-rule)**.
 
 # Create a Branch Rule
 By now your repository at GitHub has content and we can now protecting our branches against unwanted direct updates. This is a very common setup in the enterprise.
