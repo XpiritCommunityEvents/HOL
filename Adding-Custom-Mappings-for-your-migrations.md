@@ -79,8 +79,4 @@ transform "DotNetCoreCLI@2" do |item|
     }
 end
 ```
-Now run the transformation again and pass it the custom plugin.
-
-Now look at the result and see if this results in a build that succeeds.
-
-
+Run the transformation again and pass it the custom plugin. Look at the result and see if this results in a build that succeeds. 
