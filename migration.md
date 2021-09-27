@@ -62,9 +62,9 @@ The codespace you're using has already pulled the `valet-cli` image if your gith
 
 If codespaces was unable to pull the image you can try to pull it manually.
 
-You need a Personal Access Token with at least `Packages (Read)` permissions:
+You need a Personal Access Token with at least the `Packages (Read)` and `Workflow` permissions:
 
-![Packages (Read) PAT](./images/create-ghcr-pat.png)
+![Packages (Read) PAT](./images/create-ghcr-path.png)
 
 Then you can run:
 
