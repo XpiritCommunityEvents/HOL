@@ -16,10 +16,10 @@ Feel free to contribute any of your additions: please make the change and create
 **Known issue logged with GitHub:** [https://github.com/github/valet/issues/3125](https://github.com/github/valet/issues/3125)
 
 ## CodeSpaces command line Bash
-**HOL: []()**
+>**HOL: []()**
 
 ## Error code 401 
-**HOL:** [Migrating pipelines from Azure DevOps to GitHub Actions using Valet](https://github.com/Microsoft-Bootcamp/HOL/blob/main/migration.md)
+>**HOL:** [Migrating pipelines from Azure DevOps to GitHub Actions using Valet](https://github.com/Microsoft-Bootcamp/HOL/blob/main/migration.md)
 **Error description:**
 **Remediation:** Are you sure you have set the right scope when generating your Personal Access Token? It should have at least scope for `read:packages` and `workflow`. To generate a new Personal Access Token, please follow the below steps:
 - Go to your GitHub settings > Developer settings > Personal Access Tokens.
@@ -27,12 +27,12 @@ Feel free to contribute any of your additions: please make the change and create
 - Update your Personal Access Token and retry the steps.
 
 # Error 404 when running Valet migrate command
-**HOL:** [Migrating pipelines from Azure DevOps to GitHub Actions using Valet](https://github.com/Microsoft-Bootcamp/HOL/blob/main/migration.md)
+>**HOL:** [Migrating pipelines from Azure DevOps to GitHub Actions using Valet](https://github.com/Microsoft-Bootcamp/HOL/blob/main/migration.md)
 
 
 ## Error code 422 - Invalid request
-**HOL:** []()
-> PUT https://api.github.com/repos/Microsoft-Bootcamp/attendee-<yourGitHubhandle>/contents/.github/workflows/classic_ci.yml: 422 - Invalid request.
+>**HOL:** []()
+**Error:** >PUT https://api.github.com/repos/Microsoft-Bootcamp/attendee-<yourGitHubhandle>/contents/.github/workflows/classic_ci.yml: 422 - Invalid request.
 **Error description:**
 **Remediation:**
   
