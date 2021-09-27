@@ -7,6 +7,13 @@ All the hands-on labs will use the CodeSpaces capability of GitHub. During the i
 
 The container needs access to the Valet tooling, which is stored in the GitHub Container Registry. These secrets are already preconfigured in at the organization level.
 
+This hands on lab consists of the following steps:
+- [Setting up your CodeSpaces development environment](#setting-up-your-codespaces-development-environment)
+- [Adding Valet to your CodeSpaces development environment](#adding-valet-to-your-codespaces-development-environment)
+- [Pulling the Docker image for Valet](#pulling-the-docker-image-for-valet)
+- [Run an audit on the existing Azure DevOps project](#run-an-audit-on-the-existing-azure-devops-project)
+- [Execute the migration](#execute-the-migration)
+
 ## Setting up your CodeSpaces development environment
 Now before we continue the hands-on lab, go to your repository and start your Codespace instance by clicking the button `Code`, then the tab `Codespaces` and select `New Codespace`.
 
