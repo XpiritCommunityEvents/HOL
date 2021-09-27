@@ -1,6 +1,11 @@
 # Enabling and using Dependabot on your repository
 The hands-on lab has the goal to learn you how to enable the Dependency and Dependabot features and gain hands-on experience with Dependatbot's ability to update your dependencies automatically.
 
+This hands on lab consists of the following steps:
+- [Enabling the Dependency features](#enabling-the-dependency-features)
+- [Dependabot alerts](#dependabot-alerts)
+- [If time permits: Always assign Dependabot alerts to a person for review](#if-time-permits-always-assign-dependabot-alerts-to-a-person-for-review)
+
 ## Enabling the Dependency features
 Let's start with enabling the following features on your repository. When you navigate to the `Settings` tab on your repository, under the `Configure security and analysis features` you will find the following features. Go ahead and click `Enable` for each of these features:
 * Dependency graph
