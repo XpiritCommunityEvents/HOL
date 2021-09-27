@@ -5,7 +5,7 @@ In this hands-on lab your will create your first GitHub Action Workflow and lear
 
 This hands on lab consists of the following steps:
 - [Creating the workflow](#creating-the-workflow)
-- [## Viewing your workflow results]()
+- [Viewing your workflow results](#viewing-your-workflow-results)
 - [If time permits: Only trigger workflow when a change is made to the website](#if-time-permits-only-trigger-workflow-when-a-change-is-made-to-the-website)
 - [If time permits: Only trigger workflow on new issue created](#if-time-permits-only-trigger-workflow-on-new-issue-created)
 - [If time permits: Create a Matrix build for release and debug](#if-time-permits-create-a-matrix-build-for-release-and-debug)
