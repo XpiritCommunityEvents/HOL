@@ -15,7 +15,7 @@ Day 2:
 - Exercise 4: [Enabling and using Dependabot on your repository](https://github.com/Microsoft-Bootcamp/HOL/blob/main/dependabot.md)
 - Exercise 5: [Using Code Spaces on your repository](https://github.com/Microsoft-Bootcamp/HOL/blob/main/codespaces.md)
 
-Running into an issue? Errors popping up? We have documented some of the known issues and how to solve them, please see [FAQ](faq.md).
+Running into an issue? Errors popping up? We have documented some of the issues that you can run into and ways to solve them, please see [FAQ](faq.md).
 
 # Contribute back! 
 When you find errors or inconsistencies in the lab descriptions, or there are additions you want to contribute, then please make the change and create a pull request so we can adopt this in our next workshop. 
