@@ -50,7 +50,7 @@ From here, you can see the list of workflows with the CodeQL workflow and the ru
 
 ![Code Scanning - CodeQL run history](./images/codeqlrunhistory.PNG)
 
-After some minutes, the workflow run will be completed and you will see the status being updated.
+After some minutes, generally around 7 to 8 minutes, the workflow run will be completed and you will see the status being updated.
 
 ![Code Scanning - CodeQL views runs (completed)](./images/codeqlviewruns_completed.PNG)
 
