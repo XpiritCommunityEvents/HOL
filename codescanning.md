@@ -1,5 +1,16 @@
 # Setting up Code Scanning and Security Scanning for your repository
-This hands-on lab has the goal to show you how you can set up Code Scanning for your repository and to let you experience how its features help you to find security vulnerabilities and code errors in the code in your repository. Secondly, you will learn how to enable Secret Scanning and will experience how it is able to scan your respository for known types of secrets and what it's capabilities are in order to prevent fraudelent use.
+This hands-on lab has the goal to learn you how you can set up Code Scanning for your repository and to let you experience how its features help you to find security vulnerabilities and code errors in the code in your repository. You will also learn how to enable Secret Scanning and will experience how it is able to scan your respository for known types of secrets and what it's capabilities are in order to prevent fraudelent use. Good luck! 👍
+
+[Enabling GitHub Advanced Security on your repository](#enabling-github-advanced-security-on-your-repository)
+[Code Scanning](#code-scanning)
+[Enabling the Code Scanning functionality](#enabling-the-code-scanning-functionality)
+[Analyzing Code Scanning outcomes](#analyzing-code-scanning-outcomes)
+[Secret Scanning](#secret-scanning)
+[Enabling Secret Scaning functionality](#enabling-secret-scanning-functionality)
+[Managing Secret Scanning alerts](#managing-secret-scanning-alerts)
+[Secret Scanning: Alert notifications](#secret-scanning-alert-notifications)
+[Secret Scanning: Securing compromised secrets](#secret-scanning-securing-compromised-secrets)
+[If time permits: Triggering Secret Scanning by inserting a connection string](#if-time-permits-triggering-secret-scanning-by-inserting-a-connection-string)
 
 ## Enabling GitHub Advanced Security on your repository
 Should GitHub Advanced Security not be enabled yet on your repository, you can enable it from the `Settings` menu on your repository, then under `Security & Analysis`, in the section `GitHub Advanced Security`, click `Enable`. Advanced Security should be enabled in order to enable Code Scanning and Secret Scanning.
@@ -68,7 +79,7 @@ If someone checks a secret with a known pattern into a public or private reposit
 
 For GitHub Secret SCanning documentation, please refer to: [https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning](https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning)
 
-### Enabling Secret Scaning functionality
+### Enabling Secret Scanning functionality
 To enable GitHub Secret Scanning, please navigate to the `Settings` of your repository, click `Security & analysis` click `Enable` for the `Secret Scanning` feature.
 
 ![Secret Scanning - Enable](./images/secretscanningenable.PNG)
