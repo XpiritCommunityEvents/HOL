@@ -27,7 +27,6 @@ Start with retrieving the Clone URL of the Azure DevOps repository you want to m
 Next, we'll import the Azure DevOps repository in your GitHub repository. There are two ways to achieve this, you'll use one of both: 
 1. [Clone the repository  - Using command line](#clone-the-repository---using-command-line)
 2. [Import the repository - Using GUI](#import-the-repository---using-gui)
-3. # Create a Branch Rule
 
 **We've noticed during previous deliveries of the Technical Bootcamp, that not all participants could perform the import using GUI due to missing the 'Import Code' button in their repository. Therefore, we'll import the repository using the command line. However, we wanted to show you how you can import a repository without the command line. Feel free to use this method, should you prefer this method and the option is available for you.**
 
