@@ -7,6 +7,7 @@ All the hands-on labs will use the CodeSpaces capability of GitHub. During the i
 
 The container needs access to the Valet tooling, which is stored in the GitHub Container Registry. These secrets are already preconfigured in at the organization level.
 
+## Setting up your CodeSpaces development environment
 Now before we continue the hands-on lab, go to your repository and start your Codespace instance by clicking the button `Code`, then the tab `Codespaces` and select `New Codespace`.
 
 ![starting codespaces](images/codespaces.png)
@@ -23,7 +24,7 @@ The place where we will do all our work for this hands-on lab is in the terminal
   
 > Note: All command-line steps assume the above environment to work. So please ensure this is the case before you start.
 
-## Adding Valet to your development environment.
+## Adding Valet to your CodeSpaces development environment
 
 Valet uses a Docker container to do all the work. This container is available the moment you are onboarded to Valet.
 Valet consist primarily out of two things we need to setup before we can do some work:
@@ -33,7 +34,7 @@ Valet consist primarily out of two things we need to setup before we can do some
 
 Let us get started by setting up the tools so they work.
 
-### Pulling the docker image for Valet
+### Pulling the Docker image for Valet
 
 In the terminal window in your Codespace environment (or in Visual Studio Code if you prefer to use that)
 type at the command-line:
@@ -75,7 +76,7 @@ Configure a credential helper to remove this warning. See
 https://docs.docker.com/engine/reference/commandline/login/#credentials-store
 ```
 
-Next we pull the image to the local Codespace 
+Next, we pull the image to the local Codespace 
 
 >$ docker pull ghcr.io/valet-customers/valet-cli
 
