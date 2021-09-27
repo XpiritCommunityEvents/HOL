@@ -3,6 +3,13 @@ In this hands-on lab your will create your first GitHub Action Workflow and lear
 
 > Before you start with this lab, please remove the branch rule, so you can commit to the main branch without a pull request to speed up the process :smirk:
 
+This hands on lab consists of the following steps:
+- [Creating the workflow](#creating-the-workflow)
+- [## Viewing your workflow results]()
+- [If time permits: Only trigger workflow when a change is made to the website](#if-time-permits-only-trigger-workflow-when-a-change-is-made-to-the-website)
+- [If time permits: Only trigger workflow on new issue created](#if-time-permits-only-trigger-workflow-on-new-issue-created)
+- [If time permits: Create a Matrix build for release and debug](#if-time-permits-create-a-matrix-build-for-release-and-debug)
+
 ## Creating the workflow
 1. Work inside your current repository `Microsoft-Bootcamp/attendee-<your-github-handle>`
 2. Create a `.github/workflows` directory in your repository on GitHub if this directory does not already exist.
@@ -31,6 +38,7 @@ jobs:
 ![](https://docs.github.com/assets/images/help/repository/actions-quickstart-commit-new-file.png)
 
 Committing the workflow file to a branch in your repository triggers the push event and runs your workflow.
+
 ## Viewing your workflow results
 1. On GitHub, navigate to the main page of the repository.
 2. Under your repository name, click `Actions`.
@@ -52,9 +60,7 @@ For example, you can see the list of files in your repository:
 ![](https://docs.github.com/assets/images/help/repository/actions-quickstart-log-detail.png)
 
 
-# If time permits:
-
-## Only trigger workflow when a change is made to the website
+# If time permits: Only trigger workflow when a change is made to the website
 
 See: [Workflow syntax for github actions - on push/pull - request paths.](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#onpushpull_requestpaths)
 ```
@@ -69,7 +75,7 @@ jobs:
 ...
 ```
 
-## Only trigger workflow on new issue created
+# If time permits: Only trigger workflow on new issue created
 
 See: [Webhook events and payloads - Issues](https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads#issues)
 ```
@@ -84,7 +90,7 @@ on:
 ...
 ```
 
-## Create a Matrix build for release and debug
+# If time permits: Create a Matrix build for release and debug
 See: [Workflow Syntax - Jobs - Matrix Strategy](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstrategymatrix)
 
 ```
