@@ -1,11 +1,12 @@
 # Creating your first Action Workflow
+In this hands-on lab your will create your first GitHub Action Workflow and learn how you can use Actions to automate tasks in your software development lifecycle. If you like more background information, please refer to the [GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions) pages on GitHub Docs. Good luck! 👍
 
 > Before you start with this lab, please remove the branch rule, so you can commit to the main branch without a pull request to speed up the process :smirk:
 
 1. Work inside your current repository `Microsoft-Bootcamp/attendee-<your-github-handle>`
-1. Create a `.github/workflows` directory in your repository on GitHub if this directory does not already exist.
-1. In the `.github/workflows` directory, create a file named `github-actions-demo.yml`.
-1. Copy the following YAML contents into the `github-actions-demo.yml` file:
+2. Create a `.github/workflows` directory in your repository on GitHub if this directory does not already exist.
+3. In the `.github/workflows` directory, create a file named `github-actions-demo.yml`.
+4. Copy the following YAML contents into the `github-actions-demo.yml` file:
 ```YAML
 name: GitHub Actions Demo
 on: [push]
@@ -25,7 +26,7 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
 ```
-4. Scroll to the bottom of the page and select `Create` a new branch for this commit and start a pull request. Then, to create a pull request, click `Propose new file`.
+5. Scroll to the bottom of the page and select `Create` a new branch for this commit and start a pull request. Then, to create a pull request, click `Propose new file`.
 ![](https://docs.github.com/assets/images/help/repository/actions-quickstart-commit-new-file.png)
 
 Committing the workflow file to a branch in your repository triggers the push event and runs your workflow.
