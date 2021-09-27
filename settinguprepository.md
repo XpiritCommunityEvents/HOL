@@ -1,6 +1,13 @@
 # Migrating your repository from Azure DevOps
 This hands-on lab has the goal to show you how you can migrate an existing Azure DevOps git repository to GitHub. At the end of this hands on lab, your GitHub repository (`https://github.com/Microsoft-Bootcamp/attendee-<yourGitHubhandle>`) will contain a migrated copy of an Azure DevOps repository. This is the first step that needs to be finished for all the other labs to succeed, as you will use this repository to perform the other hands on labs. Good luck! 👍
 
+This hands on lab consists of the following steps:
+- [Acquire the Azure DevOps Git repository URI](#acquire-the-azure-devops-git-repository-uri)
+- [Import the repository](#import-the-repository)
+- [Clone the repository - Using command line](#clone-the-repository---using-command-line)
+- [Import the repository - Using GUI](#import-the-repository---using-gui) (optional)
+- [If time permits: enforce CODEOWNERS review](if-time-permits-enforce-codeowners-review)
+
 ## Acquire the Azure DevOps Git repository URI
 For this bootcamp, we have prepared a public Azure DevOps repository for you and created a private GitHub repository for you. Before you can clone the existing repository, you'll need an URI that points to the existing repository. This URI represents the source of the repo you're going to copy. 
 
@@ -19,6 +26,7 @@ Start with retrieving the URL of the Azure DevOps repository you want to migrate
 Next, we'll import the Azure DevOps repository in your GitHub repository. There are two ways to achieve this, you'll use one of both: 
 1. [Clone the repository  - Using command line](#clone-the-repository---using-command-line)
 2. [Import the repository - Using GUI](#import-the-repository---using-gui)
+3. # Create a Branch Rule
 
 **We've noticed during previous deliveries of the Technical Bootcamp, that not all participants could perform the import using GUI due to missing the 'Import Code' button in their repository. Therefore, we'll import the repository using the command line. However, we wanted to show you how you can import a repository without the command line. Feel free to use this method, should you prefer this method and the option is available for you.**
 
