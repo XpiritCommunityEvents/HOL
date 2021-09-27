@@ -60,7 +60,7 @@ For example, you can see the list of files in your repository:
 ![](https://docs.github.com/assets/images/help/repository/actions-quickstart-log-detail.png)
 
 
-# If time permits: Only trigger workflow when a change is made to the website
+## If time permits: Only trigger workflow when a change is made to the website
 
 See: [Workflow syntax for github actions - on push/pull - request paths.](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#onpushpull_requestpaths)
 ```
@@ -75,7 +75,7 @@ jobs:
 ...
 ```
 
-# If time permits: Only trigger workflow on new issue created
+## If time permits: Only trigger workflow on new issue created
 
 See: [Webhook events and payloads - Issues](https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads#issues)
 ```
@@ -90,7 +90,7 @@ on:
 ...
 ```
 
-# If time permits: Create a Matrix build for release and debug
+## If time permits: Create a Matrix build for release and debug
 See: [Workflow Syntax - Jobs - Matrix Strategy](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstrategymatrix)
 
 ```
