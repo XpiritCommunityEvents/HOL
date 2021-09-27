@@ -77,6 +77,7 @@ git clone https://github.com/Microsoft-Bootcamp/attendee-<your-github-handle>.gi
 You can now skip directly to [Create a Branch Rule](#create-a-branch-rule).
 
 ## Import the repository - Using GUI
+>**Note: This part is purely informational. If you have already cloned your repository using the steps above, skip this part.  
 This part describes how you can import the Azure DevOps repository into your GitHub repository using GUI with the Import Code functionality. Note that during previous deliveries of this Technical Bootcamp, we found that not all attendees were able to use this functionality. Therefore, this might not work for you. If this is the case, perform the import using the steps documented here: [Clone the repository  - Using command line](#clone-the-repository---using-command-line).
 
 Navigate to your repository on GitHub, it should still be completely empty and offer the ability to "Import Code" at the bottom of the page:
