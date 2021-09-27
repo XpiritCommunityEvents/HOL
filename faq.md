@@ -1,4 +1,4 @@
-#Frequently Asked Questions and Common Errors
+# Frequently Asked Questions and Common Errors
 This document is a collection of frequently asked questions and common errors that can occur during the execution of the hands on labs, including information on how to solve them.
 Feel free to contribute any of your additions: please make the change and create a pull request so we can adopt this in our next workshop.
 
