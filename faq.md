@@ -9,6 +9,7 @@ Feel free to contribute any of your additions: please make the change and create
 
 **Cause of issue:** 
 When you run a migration of a pipeline, it generates a set of environment variables. The generated environment variables are all in upper case, but the references to the variables is still Pascal casing as the original casing in the source pipeline. This will result in a failing workflow, since the workflow run on Linux is case sensitive.
+
 **Known issue logged with GitHub:** [https://github.com/github/valet/issues/3125](https://github.com/github/valet/issues/3125)
 
 **Remediation:** Manually edit the workflow file and ensure the environment variable uses capitals. Perform the following steps:
