@@ -19,7 +19,7 @@ Start with retrieving the URL of the Azure DevOps repository you want to migrate
 ![copy clone uri](https://docs.microsoft.com/en-us/azure/devops/repos/git/media/get_clone_url.gif?view=azure-devops) 
 
 ## Import the repository
-Next, we'll import the Azure DevOps repository in your GitHub repository. There are two ways to achieve this:
+Next, we'll import the Azure DevOps repository in your GitHub repository. There are two ways to achieve this, you'll use one of both: 
 1. [Clone the repository  - Using command line](#clone-the-repository---using-command-line)
 2. [Import the repository - Using GUI](#import-the-repository---using-gui)
 
