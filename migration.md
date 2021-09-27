@@ -64,7 +64,7 @@ If codespaces was unable to pull the image you can try to pull it manually.
 
 You need a Personal Access Token with at least the `Packages (Read)` and `Workflow` permissions:
 
-![Packages (Read) PAT](./images/create-ghcr-path.png)
+![Packages (Read) PAT](./images/create-ghcr-path.PNG)
 
 Then you can run:
 
