@@ -3,10 +3,10 @@ This hands-on lab has the goal to learn you how you can set up Code Scanning for
 
 This hands on lab consists of the following steps:
 - [Enabling GitHub Advanced Security on your repository](#enabling-github-advanced-security-on-your-repository)
-- [Code Scanning](#code-scanning)
+- [Code Scanning: What is it?](#code-scanning-what-is-it)
 - [Enabling the Code Scanning functionality](#enabling-the-code-scanning-functionality)
 - [Analyzing Code Scanning outcomes](#analyzing-code-scanning-outcomes)
-- [Secret Scanning](#secret-scanning)
+- [Secret Scanning: What is it?](#secret-scanning-what-is-it)
 - [Enabling Secret Scaning functionality](#enabling-secret-scanning-functionality)
 - [Managing Secret Scanning alerts](#managing-secret-scanning-alerts)
 - [Secret Scanning: Alert notifications](#secret-scanning-alert-notifications)
@@ -18,7 +18,7 @@ Should GitHub Advanced Security not be enabled yet on your repository, you can e
 
 ![Advanced Security - Enable](./images/advancedsecurityenable.PNG)
 
-## Code Scanning
+## Code Scanning: What is it?
 Code scanning is a feature that you use to analyze the code in a GitHub repository to find security vulnerabilities and coding errors. Any problems identified by the analysis are shown in GitHub.
 
 You can use code scanning to find, triage, and prioritize fixes for existing problems in your code. Code scanning also prevents developers from introducing new problems. You can schedule scans for specific days and times, or trigger scans when a specific event occurs in the repository, such as a push. If code scanning finds a potential vulnerability or error in your code, GitHub displays an alert in the repository. After you fix the code that triggered the alert, GitHub closes the alert. For more information, see [Managing code scanning alerts for your repository](https://docs.github.com/en/code-security/secure-coding/managing-code-scanning-alerts-for-your-repository]).
@@ -71,7 +71,7 @@ Each alert highlights a problem with the code and the name of the tool that iden
 
 For more detailed information on managing the Code Scanning alerts, refer to: [https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/managing-code-scanning-alerts-for-your-repository](https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/managing-code-scanning-alerts-for-your-repository)
 
-## Secret Scanning 
+## Secret Scanning: What is it?
 If your project communicates with an external service, you might use a token or private key for authentication. Tokens and private keys are examples of secrets that a service provider can issue. If you check a secret into a repository, anyone who has read access to the repository can use the secret to access the external service with your privileges. We recommend that you store secrets in a dedicated, secure location outside of the repository for your project.
 
 Secret scanning will scan your entire Git history on all branches present in your GitHub repository for any secrets. Service providers can partner with GitHub to provide their secret formats for scanning. For more information, see "Secret scanning partner program."
