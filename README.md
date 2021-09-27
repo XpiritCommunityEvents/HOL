@@ -9,7 +9,7 @@ Day 1:
 - Exercise 2: [Creating your first Action Workflow](myfirstaction.md)
 
 Day 2:
-- Exercise 1: [Migrating Pipelines form Azure DevOps](migration.md) 
+- Exercise 1: [Migrating Pipelines from Azure DevOps](migration.md) 
 - Exercise 2: [Adding Custom Mappings for your migrations](Adding-Custom-Mappings-for-your-migrations.md)
 - Exercise 3: [Setting up Code Scanning and Security Scanning for your repository](codescanning.md)
 - Exercise 4: [Enabling and using Dependabot on your repository](https://github.com/Microsoft-Bootcamp/HOL/blob/main/dependabot.md)
