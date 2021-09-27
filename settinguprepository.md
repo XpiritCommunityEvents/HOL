@@ -13,7 +13,7 @@ For this bootcamp, we have prepared a public Azure DevOps repository for you and
 
 **For this bootcamp, please use the following URL: [https://dev.azure.com/xpirit/TailWindTraders](https://dev.azure.com/xpirit/TailWindTraders)**
 
-Start with retrieving the URL of the Azure DevOps repository you want to migrate.
+Start with retrieving the Clone URL of the Azure DevOps repository you want to migrate.
 1. From your web browser, open the team project for your Azure DevOps organization and choose `Repos`, then `Files`.
 
 ![get clone uri](https://docs.microsoft.com/en-us/azure/devops/repos/git/media/clone-repo/repos-files.png?view=azure-devops)
