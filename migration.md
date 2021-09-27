@@ -87,7 +87,7 @@ Next, we pull the image to the local Codespace
 
 >$ docker pull ghcr.io/valet-customers/valet-cli
 
-expected output:
+The expected output would be:
 ```
 Using default tag: latest
 latest: Pulling from valet-customers/valet-cli
