@@ -81,7 +81,7 @@ end
 ```
 Run the transformation again and pass it the custom plugin. Look at the result and see if this results in a build that succeeds. 
 
-> Note, You will see the build still fails. This is caused by the fact the environment variables that are set are in all uppercase and the reference to the context in the ${{}} references are in PascalCase. This results in the variable not being resolved. This is a known issue and is filed and on the backlog of the valet team. 
+> Note, You will see the build still fails. This is caused by the fact the environment variables that are set are in all uppercase and the reference to the context in the ${{}} references are in PascalCase. This results in the variable not being resolved. This is a known issue and is filed and on the backlog of the Valet team. Read more on this issue and how to solve it in [this FAQ item](https://github.com/Microsoft-Bootcamp/HOL/blob/main/faq.md#auto-generated-environment-variables-in-the-workflow-have-the-wrong-casing). 
 
 As a final step, edit the workflow file and edit the file and replace all occurances of `${{ env.BuildConfiguration }}` with `${{ env.BUILDCONFIGURATION }}`
-Now commit the file to the main branch and start the workflow again. Now you should have a green build again.
+Now commit the file to the main branch and start the workflow again. Now you should have a succesful (green) build again.
