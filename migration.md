@@ -12,7 +12,7 @@ This hands on lab consists of the following steps:
 - [Adding Valet to your CodeSpaces development environment](#adding-valet-to-your-codespaces-development-environment)
 - [Pulling the Docker image for Valet](#pulling-the-docker-image-for-valet)
 - [Run an audit on the existing Azure DevOps project](#run-an-audit-on-the-existing-azure-devops-project)
-- [Create a Personal Access Token](#generate-a-personal-access-token)
+- [Generate a Personal Access Token](#generate-a-personal-access-token)
 - [Execute the migration](#execute-the-migration)
 
 ## Setting up your CodeSpaces development environment
