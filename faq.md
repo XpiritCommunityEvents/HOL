@@ -15,7 +15,14 @@ When you run a migration of a pipeline, it generates a set of environment variab
 2. Update `${{ env.BuildConfiguration }}` in lines 28, 31 and 34 to `${{ env.BUILDCONFIGURATION }}` and save the file.
 3. Rerun the workflow and validate its run in the run history.
 
-## Error 401 - 
+## Error 401 returned when performing a Valet dry-run of migration
+**HOL:** [Migrating pipelines from Azure DevOps to GitHub Actions using Valet](https://github.com/Microsoft-Bootcamp/HOL/blob/main/migration.md)
+  
+**Error description:** When you perform a Valet dry-run or migration, and your GitHub Personal Access Token is not correct or doesn't have the correct scope set, your get an error with code 401.
+
+**Remediation:** Are you sure you have set the right scope when generating your Personal Access Token? It should have at least scope for `read:packages` and `workflow`. If you are unsure, it is best to generate a new Personal Access Token as you can't change the scope on an existing token. To create a new token, please follow [these steps](https://github.com/Microsoft-Bootcamp/HOL/blob/main/migration.md#generate-a-personal-access-token).
+
+## Invalid Azure DevOps token when performing a Valet dry-run of migration
 **HOL:** [Migrating pipelines from Azure DevOps to GitHub Actions using Valet](https://github.com/Microsoft-Bootcamp/HOL/blob/main/migration.md)
   
 **Error description:** When you run a valet dry-run or migration and your Azure DevOps token is not valid, you see the following output which is not obvious there is an authentication issue: 
@@ -29,11 +36,9 @@ When you run a migration of a pipeline, it generates a set of environment variab
 > [2021-09-28 06:47:13] There was an error extracting the Azure DevOps pipeline.                                                                                      
 > Message: (<unknown>): mapping values are not allowed in this context at line 2 column 10
 
-**Remediation:** Are you sure you have set the right scope when generating your Personal Access Token? It should have at least scope for `read:packages` and `workflow`. If you are unsure, it is best to generate a new Personal Access Token as you can't change the scope on an existing token. To create a new token, please follow the below steps:
-- Go to your GitHub settings > Developer settings > Personal Access Tokens.
-- Create a new Personal Access Token that has the scope set for at least `read:packages` and `workflow`.
-- Update your Personal Access Token and retry the steps.
+**Remediation:** 
 
+  
 ## _Error 404_ when running Valet migrate command
 **HOL:** [Migrating pipelines from Azure DevOps to GitHub Actions using Valet](https://github.com/Microsoft-Bootcamp/HOL/blob/main/migration.md)
 
