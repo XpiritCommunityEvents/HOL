@@ -5,8 +5,6 @@ Feel free to contribute any of your additions: please make the change and create
 ## Auto-generated environment variables in the workflow have the wrong casing
 **HOL:** [Creating a custom mapping to override the default behavior or non existing mappings](https://github.com/Microsoft-Bootcamp/HOL/blob/main/Adding-Custom-Mappings-for-your-migrations.md)
 
-**Error:**
-
 **Cause of issue:** 
 When you run a migration of a pipeline, it generates a set of environment variables. The generated environment variables are all in upper case, but the references to the variables is still Pascal casing as the original casing in the source pipeline. This will result in a failing workflow, since the workflow run on Linux is case sensitive.
 
@@ -19,10 +17,17 @@ When you run a migration of a pipeline, it generates a set of environment variab
 
 ## Error 401 - 
 **HOL:** [Migrating pipelines from Azure DevOps to GitHub Actions using Valet](https://github.com/Microsoft-Bootcamp/HOL/blob/main/migration.md)
-
-**Error:** 
-
-**Error description:**
+  
+**Error description:** When you run a valet dry-run or migration and your Azure DevOps token is not valid, you see the following output which is not obvious there is an authentication issue: 
+>  valet migrate azure-devops pipeline --target-url https://github.com/Microsoft-Bootcamp/validate-hol --pipeline-id 345
+> [2021-09-28 06:47:11] Logs: 'log/valet-20210928-064711.log'                                                                                                         
+> WARNING: `Faraday::Connection#basic_auth` is deprecated; it will be removed in version 2.0.                                                                         
+> While initializing your connection, use `#request(:basic_auth, ...)` instead.
+> See https://lostisland.github.io/faraday/middleware/authentication for more usage info.
+> [2021-09-28 06:47:12] There was an error extracting the Azure DevOps pipeline.                                                                                      
+> Message: (<unknown>): mapping values are not allowed in this context at line 2 column 10
+> [2021-09-28 06:47:13] There was an error extracting the Azure DevOps pipeline.                                                                                      
+> Message: (<unknown>): mapping values are not allowed in this context at line 2 column 10
 
 **Remediation:** Are you sure you have set the right scope when generating your Personal Access Token? It should have at least scope for `read:packages` and `workflow`. If you are unsure, it is best to generate a new Personal Access Token as you can't change the scope on an existing token. To create a new token, please follow the below steps:
 - Go to your GitHub settings > Developer settings > Personal Access Tokens.
