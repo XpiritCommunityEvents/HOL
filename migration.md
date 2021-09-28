@@ -12,6 +12,7 @@ This hands on lab consists of the following steps:
 - [Adding Valet to your CodeSpaces development environment](#adding-valet-to-your-codespaces-development-environment)
 - [Pulling the Docker image for Valet](#pulling-the-docker-image-for-valet)
 - [Run an audit on the existing Azure DevOps project](#run-an-audit-on-the-existing-azure-devops-project)
+- [Create a Personal Access Token](#generate-a-personal-access-token)
 - [Execute the migration](#execute-the-migration)
 
 ## Setting up your CodeSpaces development environment
@@ -167,6 +168,16 @@ The output of this audit run will result in a set of files that got generated to
 Here you can see how the migration will happen and how successful it will be. Note that not everything will be migrated and manual fixes are needed to succeed.
  
 Inspect the file `audit_summary.md` and look at the results of the audit migration
+
+# Generate a Personal Access Token
+Before we move to the step where we execute the migration, you first need to generate a Personal Access Token. 
+1. To do so, navigate to your GitHub Settings - click your profile photo and go to Settings or follow [this link](https://github.com/settings/profile).
+2. Go to `Developer Settings`
+3. Go to `Personal Access Tokens`
+4. Click `Generate new token`. If required, provide your password.
+5. Select at least the scopes `read packages` and `workflow`. Optionally, provide a text in the field `Note` and change the `Expiration`. 
+6. Click `Generate token`
+7. Your token is now generated. Make sure to copy your token, as you will not be able to retrieve it later on. Move to the next step ([Execute the migration](#execute-the-migration)) where you will use this token.
   
 # Execute the migration
   
