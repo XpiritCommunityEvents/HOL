@@ -80,3 +80,8 @@ transform "DotNetCoreCLI@2" do |item|
 end
 ```
 Run the transformation again and pass it the custom plugin. Look at the result and see if this results in a build that succeeds. 
+
+> Note, You will see the build still fails. This is caused by the fact the environment variables that are set are in all uppercase and the reference to the context in the ${{}} references are in PascalCase. This results in the variable not being resolved. This is a known issue and is filed and on the backlog of the valet team. 
+
+As a final step, edit the workflow file and edit the file and replace all occurances of `${{ env.BuildConfiguration }}` with `${{ env.BUILDCONFIGURATION }}`
+Now commit the file to the main branch and start the workflow again. Now you should have a green build again.
