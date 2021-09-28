@@ -1,6 +1,6 @@
 # Frequently Asked Questions and Common Errors
 This document is a collection of frequently asked questions and common errors that can occur during the execution of the hands on labs, including information on how to solve them.
-Feel free to contribute any of your additions: please make the change and create a pull request so your colleagues can benefit in next bootcamp sessions.
+Feel free to contribute any of your additions: please make the change and create a pull request so that other attendees can benefit in next bootcamp sessions.
 
 ## Auto-generated environment variables in the workflow have the wrong casing
 **HOL:** [Creating a custom mapping to override the default behavior or non existing mappings](https://github.com/Microsoft-Bootcamp/HOL/blob/main/Adding-Custom-Mappings-for-your-migrations.md)
@@ -17,7 +17,7 @@ When you run a migration of a pipeline, it generates a set of environment variab
 2. Update `${{ env.BuildConfiguration }}` in lines 28, 31 and 34 to `${{ env.BUILDCONFIGURATION }}` and save the file.
 3. Rerun the workflow and validate its run in the run history.
 
-## Error code 401 - 
+## Error 401 - 
 **HOL:** [Migrating pipelines from Azure DevOps to GitHub Actions using Valet](https://github.com/Microsoft-Bootcamp/HOL/blob/main/migration.md)
 
 **Error:** 
@@ -29,10 +29,10 @@ When you run a migration of a pipeline, it generates a set of environment variab
 - Create a new Personal Access Token that has the scope set for at least `read:packages` and `workflow`.
 - Update your Personal Access Token and retry the steps.
 
-## Error 404 when running Valet migrate command
+## _Error 404_ when running Valet migrate command
 **HOL:** [Migrating pipelines from Azure DevOps to GitHub Actions using Valet](https://github.com/Microsoft-Bootcamp/HOL/blob/main/migration.md)
 
-## Error 422 - Invalid request, "sha" wasn't supplied
+## _Error 422 - Invalid request, "sha" wasn't supplied_ when 
 **HOL:** [Setting up Code Scanning and Security Scanning for your repository](https://github.com/Microsoft-Bootcamp/HOL/blob/main/codescanning.md)
 
 **Error:** >PUT https://api.github.com/repos/Microsoft-Bootcamp/attendee-<yourGitHubhandle>/contents/.github/workflows/classic_ci.yml: 422 - Invalid request.
