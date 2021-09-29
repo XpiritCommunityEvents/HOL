@@ -136,7 +136,7 @@ There is already a CODEOWNERS file in the repo that you migrated. It has the fol
 # /Documents @Microsoft-Bootcamp/reviewers
 # Create your own rules below this line without the # sign
 ```
-Now change the file so it defines the folder `/Source/Tailwind.Traders.Web` has a team as owner. All attendees of todays technical workshop are part of a team that we set up. this team has the following naming convention: Attendees_ddMM where dd stands for the day of the month of the workshop (with leading 0 so it is always two digits) and MM stands for the month number. So october 6 is then: `Attendees_0610`
+Now change the file so it defines the folder `/TailwindTraders.Website/Source/Tailwind.Traders.Web` has a team as owner. All attendees of todays technical workshop are part of a team that we set up. this team has the following naming convention: Attendees_ddMM where dd stands for the day of the month of the workshop (with leading 0 so it is always two digits) and MM stands for the month number. So october 6 is then: `Attendees_0610`
 
 After setting up the file, commit it to the main branch.
 Next goto the  branch protection rules and for the main branch select the option `Require review from Code Owners`
