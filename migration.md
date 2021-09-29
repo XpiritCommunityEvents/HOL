@@ -198,9 +198,9 @@ GITHUB_INSTANCE_URL=https://github.com
 
 Now, we can run the command line and need to pass it the pipeline command. This command also requires to pass in a --target-url, which is the GitHub repo you are targeting. This is the location `https://github.com/Microsoft-Bootcamp/<your-repo-name>`.  
 
-You also need the pipeline's definition-id of the Azure DevOps pipeline. You can find this in the URL of the Azure DevOps project the moment you browse to the pipeline details. Refer to the screenshot below where to find it:
+You also need the pipeline's definition-id of the Azure DevOps pipeline. You can find the definitionId in the `Classic CI.config.json`.
   
-![finding the pipeline id](images/pipeline-id.png)
+![finding the pipeline id](images/find-defenition.png)
 
 
 Then, again from the `valet` folder, we can run the following command to execute the migration:
