@@ -161,9 +161,10 @@ AZURE_DEVOPS_INSTANCE_URL=https://dev.azure.com/xpirit
 > AZURE_DEVOPS_ACCESS_TOKEN=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 > ```
 
-Now, run the following command:
+Now, from the `./valet` folder in your repository, run valet to verify your Azure DevOps configuration:
   
 ```
+cd valet
 valet audit azure-devops --output-dir . 
 ```
 
@@ -195,7 +196,7 @@ GITHUB_ACCESS_TOKEN=<your github token here>
 GITHUB_INSTANCE_URL=https://github.com
 ```
 
-Now, we can run the command line and need to pass it the pipeline command. This command also requires to pass in a --target-url, which is the GitHub repo you are targeting. This is the location https://github.com/Microsoft-Bootcamp/&lt;your-repo-name&gt;.  
+Now, we can run the command line and need to pass it the pipeline command. This command also requires to pass in a --target-url, which is the GitHub repo you are targeting. This is the location `https://github.com/Microsoft-Bootcamp/<your-repo-name>`.  
 You also need the pipeline id of the Azure DevOps pipeline. You can find this in the URL of the Azure DevOps project the moment you browse to the pipeline details. Refer to the screenshot below where to find it:
   
 ![finding the pipeline id](images/pipeline-id.png)
