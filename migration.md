@@ -229,5 +229,5 @@ This will look as follows:
 Now, inspect the pull request and the action workflow that is part of the pull request.
 Accept the pull request and run the workflow manually.
 
-The result of the action workflow is a failing build that creates a set of artifacts that can be used to run a deployment workflow and pick up the artifacts. You can manually fix the workflow, or we can fix valet. The next lab will look into that.
+The result of the action workflow is a failing build that creates a set of artifacts that can be used to run a deployment workflow and pick up the artifacts. You can manually fix the workflow, [look at the FAQ for tips](https://github.com/Microsoft-Bootcamp/HOL/blob/main/faq.md), or we can fix valet. The next lab will look into that.
   
