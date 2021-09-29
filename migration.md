@@ -150,11 +150,16 @@ To run Valet commands we need to pass in the arguments at each command or we can
 Add the following parameters to the file:
   
 ```
-AZURE_DEVOPS_ACCESS_TOKEN=<token will be provided>
 AZURE_DEVOPS_PROJECT=TailWindTraders
 AZURE_DEVOPS_ORGANIZATION=xpirit
 AZURE_DEVOPS_INSTANCE_URL=https://dev.azure.com/xpirit
 ```
+
+> NOTE: Normally you'd also add a Personal Access Token for Azure DevOps, but in this hands-on lab that token is automatically picked up from the environment.
+> ]
+> ```
+> AZURE_DEVOPS_ACCESS_TOKEN=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+> ```
 
 Now, run the following command:
   
