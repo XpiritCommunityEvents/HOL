@@ -28,7 +28,7 @@ Please wait for this to complete. The reason it takes some more time the first t
 When your Codespace is ready you will see the full IDE appear in your browser. This is a full Visual Studio Code experience in your browser! This looks as follows:
 ![code space ide](images/codespace-ide.png)
 
-The place where we will do all our work for this hands-on lab is in the terminal window, that you can find in the right bottom part. It should show you a command-line and it is currently in the folder `/workspaces/&lt;your-repo-name&gt; (main)`
+The place where we will do all our work for this hands-on lab is in the terminal window, that you can find in the right bottom part. It should show you a command-line and it is currently in the folder `/workspaces/<your-repo-name> (main)`
   
 > Note: All command-line steps assume the above environment to work. So please ensure this is the case before you start.
 
