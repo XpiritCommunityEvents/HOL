@@ -49,6 +49,20 @@ When you run a migration of a pipeline, it generates a set of environment variab
    
 **Remediation:** To remediate this issue, delete or rename the original `.github/workflows/classic_ci.yml` file. 
   
+## No custom transformers found at path: /data/plugin/DotNetCoreCLI.rb    
+  
+**HOL:** [Adding Custom Mappings for you migrations](https://github.com/Microsoft-Bootcamp/HOL/blob/main/Adding-Custom-Mappings-for-your-migrations.md)
+
+**Warning** [2021-09-30 07:19:53] No custom transformers found at path: /data/plugin/DotNetCoreCLI.rb       
+  
+**Remediation:** Update your valet dockes image by running:
+  
+```
+docker pull ghcr.io/valet-customers/valet-cli
+```
+  
+Then try the migration again.
+  
 ## Artifact copy
 **HOL:** []()
   
