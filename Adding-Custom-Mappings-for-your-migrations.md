@@ -10,7 +10,7 @@ transform "azuredevopstaskname" do |item|
    # your ruby code here that produces output
   end
 ```  
-Create a new Folder called `plugin` under the `valet` folder in your repository. In there create a files called `DotNetCoreCLI.rb`.
+Create a new folder called `plugin` under the `valet` folder in your repository. In there create a files called `DotNetCoreCLI.rb`.
 
 If we look at the transformation that was generated for our CI pipeline, we have seen the transformation does not take into account the fact we specified a wildcard pattern to match any of the csproj files we might have in our repo. This now results in a workflow that fails the build if we accept the default mapping.
 
@@ -39,7 +39,8 @@ transform "DotNetCoreCLI@2" do |item|
 And then run a valet command line where we pass in the custom mapping like this, be sure to replace the path to the repo and the pipeline-id:
 
 ```
-$ valet migrate azure-devops pipeline --target-url https://github.com/Microsoft-Bootcamp/attendee-<your-github-handle> --pipeline-id <definition-id> --custom-transformers plugin/DotNetCoreCLI.rb
+codespace ➜ /workspaces/attendee-demo/valet (main ✗) $
+valet migrate azure-devops pipeline --target-url https://github.com/Microsoft-Bootcamp/attendee-<your-github-handle> --pipeline-id <definition-id> --custom-transformers plugin/DotNetCoreCLI.rb
 ```
 
 the output will show the following:
