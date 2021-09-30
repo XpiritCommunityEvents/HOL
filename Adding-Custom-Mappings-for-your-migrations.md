@@ -54,10 +54,13 @@ the output will show the following:
 WARNING: `Faraday::Connection#basic_auth` is deprecated; it will be removed in version 2.0.                                     
 While initializing your connection, use `#request(:basic_auth, ...)` instead.
 See https://lostisland.github.io/faraday/middleware/authentication for more usage info.<b>
+
 {"command"=>"restore", "projects"=>"$(BuildParameters.RestoreBuildProjects)"}                                                   
 {"projects"=>"$(BuildParameters.RestoreBuildProjects)", "arguments"=>"--configuration $(BuildConfiguration)"}
 {"command"=>"test", "projects"=>"$(BuildParameters.TestProjects)", "arguments"=>"--configuration $(BuildConfiguration)"}
-{"command"=>"publish", "publishWebProjects"=>true, "projects"=>"$(BuildParameters.RestoreBuildProjects)", "arguments"=>"--configuration $(BuildConfiguration) --output $(build.artifactstagingdirectory)", "zipAfterPublish"=>true}</b>
+{"command"=>"publish", "publishWebProjects"=>true, "projects"=>"$(BuildParameters.RestoreBuildProjects)", "arguments"=>"--configuration $(BuildConfiguration) --output $(build.artifactstagingdirectory)", "zipAfterPublish"=>true}
+
+</b>
 WARNING: `Faraday::Connection#authorization` is deprecated; it will be removed in version 2.0.                                  
 While initializing your connection, use `#request(:authorization, ...)` instead.
 See https://lostisland.github.io/faraday/middleware/authentication for more usage info.
