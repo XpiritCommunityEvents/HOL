@@ -3,7 +3,7 @@ This document is a collection of frequently asked questions and common errors th
 Feel free to contribute any of your additions: please make the change and create a pull request so that other attendees can benefit in next bootcamp sessions.
 
 ## Auto-generated environment variables in the workflow have the wrong casing
-**HOL:** [Creating a custom mapping to override the default behavior or non existing mappings](https://github.com/Microsoft-Bootcamp/HOL/blob/main/Adding-Custom-Mappings-for-your-migrations.md)
+**HOL:** [Adding Custom Mappings for you migrations](https://github.com/Microsoft-Bootcamp/HOL/blob/main/Adding-Custom-Mappings-for-your-migrations.md)
 
 **Cause of issue:** 
 When you run a migration of a pipeline, it generates a set of environment variables. The generated environment variables are all in upper case, but the references to the variables is still Pascal casing as the original casing in the source pipeline. This will result in a failing workflow, since the workflow run on Linux is case sensitive.
@@ -43,7 +43,7 @@ When you run a migration of a pipeline, it generates a set of environment variab
 **HOL:** [Migrating pipelines from Azure DevOps to GitHub Actions using Valet](https://github.com/Microsoft-Bootcamp/HOL/blob/main/migration.md)
 
 ## _Error 422 - Invalid request, "sha" wasn't supplied_ when 
-**HOL:** [Setting up Code Scanning and Security Scanning for your repository](https://github.com/Microsoft-Bootcamp/HOL/blob/main/codescanning.md)
+**HOL:** [Adding Custom Mappings for you migrations](https://github.com/Microsoft-Bootcamp/HOL/blob/main/Adding-Custom-Mappings-for-your-migrations.md)
 
 **Error:** >PUT https://api.github.com/repos/Microsoft-Bootcamp/attendee-<yourGitHubhandle>/contents/.github/workflows/classic_ci.yml: 422 - Invalid request.
    
