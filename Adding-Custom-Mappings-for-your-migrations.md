@@ -35,6 +35,13 @@ transform "DotNetCoreCLI@2" do |item|
    puts item
   end
 ```  
+
+> NOTE: There is currently a bug in `valet` which forces the plugins to be looked up in `/data/` instead of your working folder. To work around this, you can creade a symlink to make your files appear where `valet` expects them:
+> ```
+> cd /
+> sudo ln -s /workspaces/attendee-<your-github-handle>/valet Data
+> ```
+   
 And then run a valet command line where we pass in the custom mapping like this:
 
 ```
