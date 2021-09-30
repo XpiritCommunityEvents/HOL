@@ -42,10 +42,10 @@ transform "DotNetCoreCLI@2" do |item|
 > sudo ln -s /workspaces/attendee-<your-github-handle>/valet Data
 > ```
    
-And then run a valet command line where we pass in the custom mapping like this:
+And then run a valet command line where we pass in the custom mapping like this, be sure to replace the path to the repo and the pipeline-id:
 
 ```
-$ valet migrate azure-devops pipeline --target-url https://github.com/Microsoft-Bootcamp/<yourreponame> --pipeline-id ### --custom-transformers plugin/DotNetCoreCLI.rb
+$ valet migrate azure-devops pipeline --target-url https://github.com/Microsoft-Bootcamp/attendee-<your-github-handle> --pipeline-id <definition-id> --custom-transformers plugin/DotNetCoreCLI.rb
 ```
 
 the output will show the following:
