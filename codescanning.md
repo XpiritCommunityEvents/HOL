@@ -119,6 +119,6 @@ You can trigger the Secret Scanning functionality by inserting a secret in your 
 * Go to the [Azure Portal](https://portal.azure.com/)
 * Create, for example, a storage account within your own subscription
 * Once this is created, copy the connection string to the storage account (navigate to `Access keys`)
-* Open the file `tailwindtraders/.web/appsettings.json`, 
+* Open the file `/TailwindTraders.Website/Source/Tailwind.Traders.Web/appsettings.json`, 
 * At the end of the file, append the file with a `StorageAccountConnectionString` element and paste the copied connection string. 
 * Commit your changes and see whether you have been able to trigger a Secret Scanning alert (give the workflow some time to run after the commit) 
