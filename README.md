@@ -5,7 +5,7 @@ Here you can find the hands-on lab instructions for the two day GitHub Technical
 You can find the details for each of the hands-on labs in the sequence of the bootcamp below. Use the links to navigate to the respective labs. 
 
 Day 1:
-- Exercise 1: [Migrating your repository from Azure DevOps to GitHub](settinguprepository.md)
+- Exercise 1: [Migrating your repository from Azure DevOps to GitHub](/day-1/1.1-settinguprepository.md)
 - Exercise 2: [Creating your first Action Workflow](myfirstaction.md)
 - Exercise 3: [Migrating Pipelines from Azure DevOps](migration.md)
 
