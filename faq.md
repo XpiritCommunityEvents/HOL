@@ -46,9 +46,7 @@ When you run a migration of a pipeline, it generates a set of environment variab
 **HOL:** [Setting up Code Scanning and Security Scanning for your repository](https://github.com/Microsoft-Bootcamp/HOL/blob/main/codescanning.md)
 
 **Error:** >PUT https://api.github.com/repos/Microsoft-Bootcamp/attendee-<yourGitHubhandle>/contents/.github/workflows/classic_ci.yml: 422 - Invalid request.
-  
-**Error description:** When we created the `.github/workflows/classic_ci.yml` in the 
-  
+   
 **Remediation:** To remediate this issue, delete or rename the original `.github/workflows/classic_ci.yml` file. 
   
 ## Artifact copy
