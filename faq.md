@@ -3,12 +3,12 @@ This document is a collection of frequently asked questions and common errors th
 Feel free to contribute any of your additions: please make the change and create a pull request so that other attendees can benefit in next bootcamp sessions.
 
 ## Error 401 returned when performing a Valet dry-run of migration
-**HOL:** [](https://github.com/Microsoft-Bootcamp/HOL/blob/main/day-1/1.3-migration.md)
+**HOL:** [Migrating pipelines from Azure DevOps to GitHub Actions using Valet](https://github.com/Microsoft-Bootcamp/HOL/blob/main/day-1/1.3-migration.md)
 
 **Error code:** 
-...
+```
 No value provided for the required options '--azure-devops-organization'.
-...
+```
   
 **Error description:** In your CodeSpaces environment, on the command line, when you execute the Valet command to perform for example an audit (`valet audit azure-devops --output-dir`, you receive the abovementioned error. This has to do with the directory you are executing the Valet command in.
 
@@ -54,9 +54,9 @@ When you run a migration of a pipeline, it generates a set of environment variab
 **HOL:** [Migrating pipelines from Azure DevOps to GitHub Actions using Valet](https://github.com/Microsoft-Bootcamp/HOL/blob/main/migration.md)
   
 **Error:**
-...
+```
 [yyyy-mm-dd hh:mm:ss] PUT https://api.github.com/repos/Microsoft-Bootcamp/attendee-<yourGitHubhandle>/contents/.github/workflows/classic_ci.yml: 404 - Not Found
-...
+```
    
 **Remediation:** Ensure the scope of your workflow is at least the scopes `read packages` and `workflow`. Know that your are not able the see nor change the scope of your PAT after you have created it, so you would need to generate a new PAT.
 
