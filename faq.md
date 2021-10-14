@@ -16,7 +16,7 @@ No value provided for the required options '--azure-devops-organization'.
 Change directory to the `valet` folder using the `cd` command in command line.
 
 ## Auto-generated environment variables in the workflow have the wrong casing
-**HOL:** [Adding Custom Mappings for you migrations](https://github.com/Microsoft-Bootcamp/HOL/blob/main/Adding-Custom-Mappings-for-your-migrations.md)
+**HOL:** [Adding Custom Mappings for you migrations](https://github.com/Microsoft-Bootcamp/HOL/blob/main/day-2/2.1-custom-mappings.md)
 
 **Cause of issue:** 
 When you run a migration of a pipeline, it generates a set of environment variables. The generated environment variables are all in upper case, but the references to the variables is still Pascal casing as the original casing in the source pipeline. This will result in a failing workflow, since the workflow run on Linux is case sensitive.
@@ -29,14 +29,14 @@ When you run a migration of a pipeline, it generates a set of environment variab
 3. Rerun the workflow and validate its run in the run history.
 
 ## Error 401 returned when performing a Valet dry-run of migration
-**HOL:** [Migrating pipelines from Azure DevOps to GitHub Actions using Valet](https://github.com/Microsoft-Bootcamp/HOL/blob/main/migration.md)
+**HOL:** [Migrating pipelines from Azure DevOps to GitHub Actions using Valet](https://github.com/Microsoft-Bootcamp/HOL/blob/main/day-1/1.3-migration.md)
   
 **Error description:** When you perform a Valet dry-run or migration, and your GitHub Personal Access Token is not correct or doesn't have the correct scope set, your get an error with code 401.
 
 **Remediation:** Are you sure you have set the right scope when generating your Personal Access Token? It should have at least scope for `read:packages` and `workflow`. If you are unsure, it is best to generate a new Personal Access Token as you can't change the scope on an existing token. To create a new token, please follow [these steps](https://github.com/Microsoft-Bootcamp/HOL/blob/main/migration.md#generate-a-personal-access-token).
 
 ## Invalid Azure DevOps token when performing a Valet dry-run of migration
-**HOL:** [Migrating pipelines from Azure DevOps to GitHub Actions using Valet](https://github.com/Microsoft-Bootcamp/HOL/blob/main/migration.md)
+**HOL:** [Migrating pipelines from Azure DevOps to GitHub Actions using Valet](https://github.com/Microsoft-Bootcamp/HOL/blob/main/day-1/1.3-migration.md)
   
 **Error description:** When you run a valet dry-run or migration and your Azure DevOps token is not valid, you see the following output which is not obvious there is an authentication issue: 
 >  valet migrate azure-devops pipeline --target-url https://github.com/Microsoft-Bootcamp/validate-hol --pipeline-id 345
@@ -49,9 +49,8 @@ When you run a migration of a pipeline, it generates a set of environment variab
 > [2021-09-28 06:47:13] There was an error extracting the Azure DevOps pipeline.                                                                                      
 > Message: (<unknown>): mapping values are not allowed in this context at line 2 column 10
 
-  
 ## _Error 404_ when running Valet migrate command
-**HOL:** [Migrating pipelines from Azure DevOps to GitHub Actions using Valet](https://github.com/Microsoft-Bootcamp/HOL/blob/main/migration.md)
+**HOL:** [Migrating pipelines from Azure DevOps to GitHub Actions using Valet](https://github.com/Microsoft-Bootcamp/HOL/blob/main/day-1/1.3-migration.md)
   
 **Error:**
 ```
@@ -69,7 +68,7 @@ When you run a migration of a pipeline, it generates a set of environment variab
   
 ## No custom transformers found at path: /data/plugin/DotNetCoreCLI.rb    
   
-**HOL:** [Adding Custom Mappings for you migrations](https://github.com/Microsoft-Bootcamp/HOL/blob/main/Adding-Custom-Mappings-for-your-migrations.md)
+**HOL:** [Adding Custom Mappings for you migrations](https://github.com/Microsoft-Bootcamp/HOL/blob/main/day-2/2.1-custom-mappings.md)
 
 **Warning** [2021-09-30 07:19:53] No custom transformers found at path: /data/plugin/DotNetCoreCLI.rb       
   
