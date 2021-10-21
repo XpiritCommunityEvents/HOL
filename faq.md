@@ -73,6 +73,7 @@ When you run a migration of a pipeline, it generates a set of environment variab
 **Warning** [2021-09-30 07:19:53] No custom transformers found at path: /data/plugin/DotNetCoreCLI.rb       
 
 **Remediation 1:** Make sure you have saved the `DotNetCoreCLI.rb` file.
+  
 **Remediation 2:** Update your valet dockes image by running:
   
 ```
