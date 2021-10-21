@@ -71,8 +71,9 @@ When you run a migration of a pipeline, it generates a set of environment variab
 **HOL:** [Adding Custom Mappings for you migrations](https://github.com/Microsoft-Bootcamp/HOL/blob/main/day-2/2.1-custom-mappings.md)
 
 **Warning** [2021-09-30 07:19:53] No custom transformers found at path: /data/plugin/DotNetCoreCLI.rb       
-  
-**Remediation:** Update your valet dockes image by running:
+
+**Remediation 1:** Make sure you have saved the `DotNetCoreCLI.rb` file.
+**Remediation 2:** Update your valet dockes image by running:
   
 ```
 docker pull ghcr.io/valet-customers/valet-cli
