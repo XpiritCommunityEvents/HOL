@@ -20,4 +20,7 @@ Running into an issue? Errors popping up? We have documented some of the issues 
 # Contribute back! 
 When you find errors or inconsistencies in the lab descriptions, or there are additions you want to contribute, then please make the change and create a pull request so we can adopt this in our next workshop. 
 
-:octocat:
+# Under NDA
+Be aware that the content shared in this Bootcamp is under non-disclosure agreement (NDA). Under no circumstance, push any provided tooling including Valet, to your own and/or a private repository, as that will expose the tooling to the public. 
+
+Enjoy and learn :octocat:
