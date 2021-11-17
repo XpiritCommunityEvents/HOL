@@ -15,3 +15,5 @@ You can find the details for each of the hands-on labs in the sequence of the bo
 When you find errors or inconsistencies in the lab descriptions, or there are additions you want to contribute, then please make the change and create a pull request so we can adopt this in our next workshop. 
 
 Enjoy and learn :octocat:
+
+![image](https://user-images.githubusercontent.com/84850418/142214345-c35f275d-70c1-4bfd-b329-f31eeecfe90a.png)
