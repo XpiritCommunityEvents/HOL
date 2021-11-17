@@ -1,4 +1,4 @@
-# GitHub Code To Cloud Workshop hands-on labs repository
+# GitHub Code To Cloud Workshop hands-on labs
 
 Here you can find the hands-on lab instructions for the GitHub Code To Cloud Workshop.
 
