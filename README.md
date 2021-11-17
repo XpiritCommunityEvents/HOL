@@ -1,4 +1,4 @@
-<img src="https://user-images.githubusercontent.com/84850418/142214438-24b5664a-63ab-4778-afff-c5d0829177ed.png" height="100"> <img src="https://user-images.githubusercontent.com/84850418/142215016-85ecce27-64cb-4121-af99-7720a31d6f47.png" height="100">
+<img src="https://user-images.githubusercontent.com/84850418/142252744-6a3d3419-4de1-4752-9c23-4bfa6ae2760f.png" height="100"> <img src="https://user-images.githubusercontent.com/84850418/142215016-85ecce27-64cb-4121-af99-7720a31d6f47.png" height="100">
 
 # GitHub Code To Cloud Workshop hands-on labs
 
