@@ -5,12 +5,12 @@ During this GitHub Code To Cloud Workshop, you will use CodeSpaces as your devel
 In this hands-on lab, we'll prepare your Codespaces environment and configure it to allow you to develop a web-app. 
 This hands-on lab introduces you to the concept of Codespaces, working with Codespaces and prepares your Codespaces environment for the subsequent hands-on labs. where you will further experience the benefits of working with CodeSpaces.
 
-## 1.1 Starting you Codespaces environment
+### 1.1 Starting you Codespaces environment
 1. If you have not yet started your Code Space, from your repository on the tab `Code`, click the `Code` button, select `Code Spaces` and `New codespace`. Once you are in your Code Space, you can follow the next steps to add an extension to your Code Space.
 
 
 
-## 1.2 Adding [u]persistent[/u] Extensions to your Codespaces environment
+### 1.2 Adding <u>persistent<u/> Extensions to your Codespaces environment
 
 1. Go to `Settings` (located on the bottem left side of your screen) and select `Extensions` 
 
