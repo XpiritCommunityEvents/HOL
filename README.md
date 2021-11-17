@@ -12,8 +12,6 @@ Day 1:
 - Exercise 5: [Enabling and using Dependabot on your repository](/day-2/2.3-dependabot.md)
 
 
-Running into an issue? Errors popping up? We have documented some of the issues that you can run into and ways to solve them, please see [FAQ](faq.md).
-
 # Contribute back! 
 When you find errors or inconsistencies in the lab descriptions, or there are additions you want to contribute, then please make the change and create a pull request so we can adopt this in our next workshop. 
 
