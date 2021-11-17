@@ -1,4 +1,4 @@
-# Hands-on lab 1. Setting up Codespaces to develop a web-app
+# 1. Setting up Codespaces to develop a web-app
 
 During this GitHub Code To Cloud Workshop, you will use CodeSpaces as your development IDE in the cloud. For more information on Codespaces, visit: [https://github.com/features/codespaces](https://github.com/features/codespaces)
 
