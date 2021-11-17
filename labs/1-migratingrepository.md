@@ -1,4 +1,4 @@
-# 2. Migrating a repository from Azure DevOps to GitHub
+# 1. Migrating a repository from Azure DevOps to GitHub
 This hands-on lab has the goal to show you how you can migrate an existing Azure DevOps git repository to GitHub. At the end of this hands on lab, your GitHub repository (`https://github.com/Microsoft-Bootcamp/attendee-<yourGitHubhandle>`) will contain a migrated copy of an Azure DevOps repository. This is the first step that needs to be finished for all the other labs to succeed, as you will use this repository to perform the other hands on labs. Good luck! 👍
 
 This hands on lab consists of the following steps:
@@ -9,7 +9,7 @@ This hands on lab consists of the following steps:
 - [Create a Branch Rule](#create-a-branch-rule)
 - [If time permits: enforce CODEOWNERS review](if-time-permits-enforce-codeowners-review)
 
-### 2.1 Acquire the Azure DevOps Git repository URI
+### 1.1 Acquire the Azure DevOps Git repository URI
 For this bootcamp, we have prepared a public Azure DevOps repository for you and created a private GitHub repository for you. Before you can clone the existing repository, you'll need an URI that points to the existing repository. This URI represents the source of the repo you're going to copy. 
 
 **For this bootcamp, please use the following URL: [https://dev.azure.com/xpirit/TailWindTraders](https://dev.azure.com/xpirit/TailWindTraders)**
@@ -23,14 +23,14 @@ Start with retrieving the Clone URL of the Azure DevOps repository you want to m
 
 ![copy clone uri](https://docs.microsoft.com/en-us/azure/devops/repos/git/media/get_clone_url.gif?view=azure-devops) 
 
-### 2.2 Import the repository
+### 1.2 Import the repository
 Next, we'll import the Azure DevOps repository in your GitHub repository. There are two ways to achieve this, you'll use one of both: 
 1. [Clone the repository  - Using command line](#clone-the-repository---using-command-line)
 2. [Import the repository - Using GUI](#import-the-repository---using-gui)
 
 **We've noticed during previous deliveries of the Technical Bootcamp, that not all participants could perform the import using GUI due to missing the 'Import Code' button in their repository. Therefore, we'll import the repository using the command line. However, we wanted to show you how you can import a repository without the command line. Feel free to use this method, should you prefer this method and the option is available for you.**
 
-### 2.3 Clone the repository - Using command line
+### 1.3 Clone the repository - Using command line
 In this step, you clone the repository locally, then push it into GitHub. This requires the Git client, which you can [download here](https://git-scm.com/download/gui/windows).
 
 Start a command prompt and move to a location where you want to clone the repo on your machine, e.g. `c:\sources`. 
@@ -76,7 +76,7 @@ git clone https://github.com/Microsoft-Bootcamp/attendee-<your-github-handle>.gi
 
 You can now skip directly to [Create a Branch Rule](#create-a-branch-rule).
 
-### 2.4 Import the repository - Using GUI
+### 1.4 Import the repository - Using GUI
 >**Note: This section is purely informational. If you have already cloned your repository using the steps above, skip this section because this functionality is only available in a completely empty repository. This section describes how you can import the Azure DevOps repository into your GitHub repository using GUI with the Import Code functionality. Note that during previous deliveries of this Technical Bootcamp, we found that not all attendees were able to use this functionality. Therefore, this might not work for you. If this is the case, perform the import using the steps documented: [Clone the repository  - Using command line](#clone-the-repository---using-command-line).
 
 Navigate to your repository on GitHub, it should still be completely empty and offer the ability to "Import Code" at the bottom of the page:
@@ -101,7 +101,7 @@ git clone https://github.com/Microsoft-Bootcamp/attendee-<your-github-handle>.gi
 
 You can now skip directly to [Create a Branch Rule](#create-a-branch-rule).
 
-### 2.5 Create a Branch Rule
+### 1.5 Create a Branch Rule
 By now your repository at GitHub has content and we can now protecting our branches against unwanted direct updates. This is a very common setup in the enterprise.
 In this excursive we will create a branch rule that prevents you to commit to the main branch direct and require you to create a pull request.
 
