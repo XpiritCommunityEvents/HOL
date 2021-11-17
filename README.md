@@ -1,3 +1,5 @@
+<img src="https://user-images.githubusercontent.com/84850418/142214438-24b5664a-63ab-4778-afff-c5d0829177ed.png" height="100"> <img src="https://user-images.githubusercontent.com/84850418/142215016-85ecce27-64cb-4121-af99-7720a31d6f47.png" height="100">
+
 # GitHub Code To Cloud Workshop hands-on labs
 
 Here you can find the hands-on lab instructions for the GitHub Code To Cloud Workshop.
