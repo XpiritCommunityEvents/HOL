@@ -6,8 +6,8 @@ Here you can find the hands-on lab instructions for the GitHub Code To Cloud Wor
 
 You can find the details for each of the hands-on labs in the sequence of the bootcamp below. Use the links to navigate to the respective labs. 
 
-- Hands-on lab 1: [Setting up Code Spaces to develop a web-app](/labs/1-codespaces.md)
-- Hands-on lab 2: [Migrating a repository from Azure DevOps to GitHub](/labs/2-migratingrepository.md)
+- Hands-on lab 1: [Migrating a repository from Azure DevOps to GitHub](/labs/1-migratingrepository.md) 
+- Hands-on lab 2: [Setting up Code Spaces to develop a web-app](/labs/2-codespaces.md)
 - Hands-on lab 3: [Creating your first Action Workflow](/labs/3-firstactionworkflow.md)
 - Hands-on lab 4: [Creating a .NET Actions workflow](/labs/4-.NETactionsworkflow.md)
 - Hands-on lab 5: [Setting up Code Scanning and Security Scanning for your repository](/labs/5-advancedsecurity.md)
