@@ -1,4 +1,4 @@
-# 1. Import an exisiting repository to GitHub
+# 1. Import an existing repository to GitHub
 
 ## Objectives of this hands-on lab
 This hands-on lab has the objective to show you how you can migrate an existing git repository to GitHub. At the end of this hands-on lab, your GitHub repository (`https://github.com/XpiritCommunityEvents/attendee-<yourGitHubhandle>`) will contain a migrated copy of an existing repository that we have prepared for this exercise. This is the first step that needs to be finished for all the other labs to succeed, as you will use this repository to perform the other hands-on labs. Good luck! 👍
@@ -34,7 +34,7 @@ git clone [PASTE_CLONE_URL_HERE]
 ```
 
 #### Authentication
-Since we are using a `Private` repository, you need to authenticate your session. If you have installed Git for Windows with the Credential Manager option, this information will be stored on your machine after authenticatnig for the first time. 
+Since we are using a `Private` repository, you need to authenticate your session. If you have installed Git for Windows with the Credential Manager option, this information will be stored on your machine after authenticating for the first time. 
 
 For the authentication you can either use SSH or HTTPS. 
 
