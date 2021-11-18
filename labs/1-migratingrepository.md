@@ -89,12 +89,12 @@ There is already a CODEOWNERS file in the repo that you migrated. It has the fol
 
 ```
 # Example, any change in this repo 
-# will require approval from @vriesmarcel
-# * @vriesmarcel
+# will require approval from workshopowners team
+* @XpiritCommunityEvents/workshopowners
 
 # Any change inside the `/Documents` directory
 # will require approval from anyone in the organization fluentbytes and the team docsteam
-# /Documents @XpiritCommunityEvents/reviewers
+/Documents @XpiritCommunityEvents/reviewers
 # Create your own rules below this line without the # sign
 ```
 Now change the file so it defines the folder `/TailwindTraders.Website/Source/Tailwind.Traders.Web` has a team as owner. All attendees of todays technical workshop are part of a team that we set up. this team has the following naming convention: Attendees_ddMM where dd stands for the day of the month of the workshop (with leading 0 so it is always two digits) and MM stands for the month number. So October 6 is then: `@XpiritCommunityEvents/Attendees_0610`. The Team must have access to your repository, add them with "Write" permissions so they can review your code.
