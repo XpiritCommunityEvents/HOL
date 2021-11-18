@@ -23,7 +23,7 @@ Please wait for this to complete. The reason it takes some more time the first t
 
 Once you are in your CodeSpace environment, you can follow the next steps to add an extension to your Code Space environment.
 
-## 2.2 Adjusting CodeSpaces for your team and your type of work.
+## 2.2 Adjusting CodeSpaces for your team and your type of work
 
 You will now make changes to the CodeSpaces environment so you are able to do software development as a web developer using .NET and C#.
 
@@ -43,7 +43,7 @@ We will make use of the `auto detect` features of Visual Studio Code by browsing
 
 >Note: You'll get a pop-up stating "*We've noticed a change to the devcontainer configuration. Rebuild the container to apply them now*". We will wait with this, so please dismiss this dialog. 
 
-## 2.3 Check if we can debug our webapplication
+## 2.3 Check if we can debug our web application
 1. The new plugin added the option to debug .NET applications. In the left of your screen you will see the button with the `Play` icon on there and a little symbol of a bug. Click this button and it will open the debug tools. In the top of the window you can now select which application you would like to debug. Select the application `.NET Core Launch (web)` 
 ![debugger window](../images/codespaces-new-debug-web.PNG)
 
