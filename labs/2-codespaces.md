@@ -7,6 +7,13 @@ For more information on CodeSpaces, visit: [https://github.com/features/codespac
 ## Objectives of this hands-on lab
 This hands-on lab introduces you to the concept of CodeSpaces, working with Codespaces and prepares your CodeSpaces environment for the subsequent hands-on labs. where you will further experience the benefits of working with CodeSpaces.
 
+This hands on lab consists of the following steps:
+- [2.1 Setting up your CodeSpaces development environment](#2-codespaces.md#21-setting-up-your-codespaces-development-environment)
+- [2.2 Adjusting CodeSpaces for your team and your type of work](#22-adjusting-codespaces-for-your-team-and-your-type-of-work)
+- [2.3 Checking if we can debug our web application](#23-checking-if-we-can-debug-our-web-application)
+- [2.4 Making a code change](#24-making-a-code-change)
+- [2.5 Committing the changes to the devcontainer](#25-committing-the-changes-to-the-devcontainer)
+- [2.6 Rebuilding the devcontainer](#26-rebuilding-the-devcontainer)
 
 ## 2.1 Setting up your CodeSpaces development environment
 1. Please go to your repository and start your Codespace instance by clicking the button `Code`, then the tab `Codespaces` and select `New Codespace`.
