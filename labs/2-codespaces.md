@@ -63,16 +63,17 @@ In your IDE find the file `translation.json` which can be found in the folder `T
 In this file you will find the value for the free shipping promotion. We are going to change this from `$300` to `$100` as part of a holiday promotion.
 After you have made a change to the file, go back to the tab with the website and see it chenged there also immediately.
 
-## Commit the changes to the devcontainer
+## 2.5 Committing the changes to the devcontainer
 We now know the plugin works great and we want to share this with our team. For this we need to commit some changes that were made during the exercise. First we want to commit the change to the website. For this you go to the Git toolwindow that can be found by the Git symbol in the left of your screen with a notification on there stating the number `3`.
 This means we have 3 changes that we can commit.
-You now first stage the change to the `translation.json` file. And you commit this change to the local repo.
 
-Next you stage the `devcontainer.json` and the `launch.json` file as a seperate commit.
+1. You now first stage the change to the `translation.json` file. And you commit this change to the local repo.
 
-Now that your changes have been saved, you can rebuild the container and validate that it works as expected with a new fresh CodeSpaces instance.
+2. Next you stage the `devcontainer.json` and the `launch.json` file as a seperate commit.
 
-## 2.5 Rebuilding the devcontainer
+3. Now that your changes have been saved, you can rebuild the container and validate that it works as expected with a new fresh CodeSpaces instance.
+
+## 2.6 Rebuilding the devcontainer
 1. Open the Command Palette. Use either (`CTRL+SHIFT+P`/`CMD+SHIFT+P`) or or use the cog icon in the left bottom corner and open the command palette over there.
 
 ![command palette](../images/codespaces-new-command-palette.PNG)
