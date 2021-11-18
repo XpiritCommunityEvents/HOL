@@ -1,5 +1,7 @@
 # 1. Migrating a repository from Azure DevOps to GitHub
-This hands-on lab has the goal to show you how you can migrate an existing Azure DevOps git repository to GitHub. At the end of this hands on lab, your GitHub repository (`https://github.com/Microsoft-Bootcamp/attendee-<yourGitHubhandle>`) will contain a migrated copy of an Azure DevOps repository. This is the first step that needs to be finished for all the other labs to succeed, as you will use this repository to perform the other hands on labs. Good luck! 👍
+
+## Objectives of this hands-on lab
+This hands-on lab has the objective to show you how you can migrate an existing Azure DevOps git repository to GitHub. At the end of this hands on lab, your GitHub repository (`https://github.com/XpiritCommunityEvents/attendee-<yourGitHubhandle>`) will contain a migrated copy of an Azure DevOps repository that we have prepared for this exercise. This is the first step that needs to be finished for all the other labs to succeed, as you will use this repository to perform the other hands on labs. Good luck! 👍
 
 This hands on lab consists of the following steps:
 - [Acquire the Azure DevOps Git repository URI](#acquire-the-azure-devops-git-repository-uri)
