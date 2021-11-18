@@ -9,7 +9,7 @@ This hands on lab consists of the following steps:
 - [Clone the repository - Using command line](#13-clone-the-repository---using-command-line)
 - [Import the repository - Using GUI](#14-import-the-repository---using-gui) (optional)
 - [Create a Branch Rule](#15-create-a-branch-rule)
-- [If time permits: enforce CODEOWNERS review](if-time-permits-enforce-codeowners-review)
+- [If time permits: enforce CODEOWNERS review](#if-time-permits-enforce-codeowners-review)
 
 ### 1.1 Acquire the Azure DevOps Git repository URI
 For this bootcamp, we have prepared a public Azure DevOps repository for you and created a private GitHub repository for you. Before you can clone the existing repository, you'll need an URI that points to the existing repository. This URI represents the source of the repo you're going to copy. 
