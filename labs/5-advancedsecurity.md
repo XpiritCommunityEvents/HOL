@@ -2,15 +2,17 @@
 This hands-on lab has the goal to learn you how you can set up Code Scanning for your repository and to let you experience how its features help you to find security vulnerabilities and code errors in the code in your repository. You will also learn how to enable Secret Scanning and will experience how it is able to scan your respository for known types of secrets and what it's capabilities are in order to prevent fraudelent use. Good luck! 👍
 
 This hands on lab consists of the following steps:
-- [Enabling GitHub Advanced Security on your repository](#enabling-github-advanced-security-on-your-repository)
-- [Code Scanning: What is it?](#code-scanning-what-is-it)
-- [Enabling the Code Scanning functionality](#enabling-the-code-scanning-functionality)
-- [Analyzing Code Scanning outcomes](#analyzing-code-scanning-outcomes)
-- [Secret Scanning: What is it?](#secret-scanning-what-is-it)
-- [Enabling Secret Scaning functionality](#enabling-secret-scanning-functionality)
-- [Managing Secret Scanning alerts](#managing-secret-scanning-alerts)
-- [Secret Scanning: Alert notifications](#secret-scanning-alert-notifications)
-- [Secret Scanning: Securing compromised secrets](#secret-scanning-securing-compromised-secrets)
+- [5.1 Enabling GitHub Advanced Security on your repository](#51-enabling-github-advanced-security-on-your-repository)
+- [5.2 Code Scanning](#52-code-scanning)
+- [5.2.1 Code Scanning: What is it?](#521-code-scanning-what-is-it)
+- [5.2.2 Enabling the Code Scanning functionality](#522-enabling-the-code-scanning-functionality)
+- [5.2.3 Analyzing Code Scanning outcomes](#523-analyzing-code-scanning-outcomes)
+- [5.3 Secret Scanning](#53-secret-scanning)
+- [5.3.1 Secret Scanning: What is it?](#531-secret-scanning-what-is-it)
+- [5.3.2 Enabling Secret Scaning functionality](#532-enabling-secret-scanning-functionality)
+- [5.3.3 Managing Secret Scanning alerts](#533-managing-secret-scanning-alerts)
+- [5.3.4 Secret Scanning: Alert notifications](#534-secret-scanning-alert-notifications)
+- [5.3.5 Secret Scanning: Securing compromised secrets](#535-secret-scanning-securing-compromised-secrets)
 - [If time permits: Triggering Secret Scanning by inserting a connection string](#if-time-permits-triggering-secret-scanning-by-inserting-a-connection-string)
 
 ### 5.1 Enabling GitHub Advanced Security on your repository
