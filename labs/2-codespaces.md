@@ -4,7 +4,7 @@ You just migrated a repository that contains a web application. With CodeSpaces 
 
 For more information on CodeSpaces, visit: [https://github.com/features/codespaces](https://github.com/features/codespaces)
 
-## Objectives
+## Objectives of this hands-on lab
 This hands-on lab introduces you to the concept of CodeSpaces, working with Codespaces and prepares your CodeSpaces environment for the subsequent hands-on labs. where you will further experience the benefits of working with CodeSpaces.
 
 
