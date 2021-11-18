@@ -4,17 +4,17 @@
 This hands-on lab has the objective to show you how you can migrate an existing git repository to GitHub. At the end of this hands-on lab, your GitHub repository (`https://github.com/XpiritCommunityEvents/attendee-<yourGitHubhandle>`) will contain a migrated copy of an existing repository that we have prepared for this exercise. This is the first step that needs to be finished for all the other labs to succeed, as you will use this repository to perform the other hands-on labs. Good luck! 👍
 
 This hands-on lab consists of the following steps:
-- [1.1 Acquiring the repository URI](#11-acquiring-the-azure-devops-git-repository-uri)
+- [1.1 Acquiring the repository URI](#11-acquiring-the-github-repository-uri)
 - [1.2 Import the repository using the command-line](#12-Import-the-repository-using-the-command-line)
 - [1.3 Create a Branch Rule](#15-create-a-branch-rule)
 - [If time permits: enforce CODEOWNERS review](#if-time-permits-enforce-codeowners-review)
 
-### 1.1 Acquiring the Azure DevOps Git repository URI
-For this bootcamp, we have prepared a repository for you and created a private GitHub repository for you. Before you can clone the existing repository, you'll need an URI that points to the existing repository. This URI represents the source of the repo you're going to copy. 
+### 1.1 Acquiring the GitHub repository URI
+For this bootcamp, we have prepared a demo repository for you and created a private GitHub repository for you. Before you can clone the existing repository, you'll need an URI that points to the existing repository. This URI represents the source of the repo you're going to copy. 
 
 **For this bootcamp, please use the following clone URL: [https://github.com/XpiritCommunityEvents/demo](https://github.com/XpiritCommunityEvents/demo)**
 
-Start with retrieving the Clone URL of the Azure DevOps repository you want to migrate.
+Start with retrieving the Clone URL of the GitHub repository you want to migrate.
 1. From your web browser, open the GitHub page for this repository and select the green `code` button.
 
 ![get clone uri](../images/clone-github-repo.PNG)
