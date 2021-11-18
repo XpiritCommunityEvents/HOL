@@ -43,7 +43,7 @@ We will make use of the `auto detect` features of Visual Studio Code by browsing
 
 >Note: You'll get a pop-up stating "*We've noticed a change to the devcontainer configuration. Rebuild the container to apply them now*". We will wait with this, so please dismiss this dialog. 
 
-## 2.3 Check if we can debug our web application
+## 2.3 Checking if we can debug our web application
 1. The new plugin added the option to debug .NET applications. In the left of your screen you will see the button with the `Play` icon on there and a little symbol of a bug. Click this button and it will open the debug tools. In the top of the window you can now select which application you would like to debug. Select the application `.NET Core Launch (web)` 
 ![debugger window](../images/codespaces-new-debug-web.PNG)
 
@@ -58,7 +58,7 @@ We will make use of the `auto detect` features of Visual Studio Code by browsing
 
 ![Tailwindtraders website](../images/tailwindtraders-website.PNG)
 
-## 2.4 Make a code change
+## 2.4 Making a code change
 In your IDE find the file `translation.json` which can be found in the folder `TailwindTraders.Website\Source\Tailwind.Traders.Web\ClientApp\src\assets`
 In this file you will find the value for the free shipping promotion. We are going to change this from `$300` to `$100` as part of a holiday promotion.
 After you have made a change to the file, go back to the tab with the website and see it chenged there also immediately.
@@ -72,7 +72,7 @@ Next you stage the `devcontainer.json` and the `launch.json` file as a seperate 
 
 Now that your changes have been saved, you can rebuild the container and validate that it works as expected with a new fresh CodeSpaces instance.
 
-## 2.5 Rebuild the devcontainer
+## 2.5 Rebuilding the devcontainer
 1. Open the Command Palette. Use either (`CTRL+SHIFT+P`/`CMD+SHIFT+P`) or or use the cog icon in the left bottom corner and open the command palette over there.
 
 ![command palette](../images/codespaces-new-command-palette.PNG)
