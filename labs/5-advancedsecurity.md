@@ -1,7 +1,7 @@
 # 5. GitHub Advanced Security: Setting up Code Scanning and Secret Scanning for your repository
 
 ## Objectives of this hands-on lab
-This hands-on lab has the goal to learn you how you can set up Code Scanning for your repository and to let you experience how its features help you to find security vulnerabilities and code errors in the code in your repository. You will also learn how to enable Secret Scanning and will experience how it is able to scan your respository for known types of secrets and what it's capabilities are in order to prevent fraudelent use. Good luck! 👍
+This hands-on lab has the goal to learn you how you can set up Code Scanning for your repository and to let you experience how its features help you to find security vulnerabilities and code errors in the code in your repository. You will also learn how to enable Secret Scanning and will experience how it is able to scan your repository for known types of secrets and what it's capabilities are in order to prevent fraudulent use. Good luck! 👍
 
 This hands on lab consists of the following steps:
 - [5.1 Enabling GitHub Advanced Security on your repository](#51-enabling-github-advanced-security-on-your-repository)
@@ -35,7 +35,7 @@ To enable GitHub Code Scanning, please navigate to the `Settings` of your reposi
 
 ![Code Scanning - Set up](../images/codescanningsetup.PNG)
 
-You'll be directed to the `Get started with Code Scanning` form, from where you can set up code scanning to use the *CodeQL Analysis* product maintained by GitHub or a third-party code scanning tool. For this lab, we'll pick the CodeQL product. To enable this, you'll click the `Set up this workflow` for the `CodeQL Analysis` product maintained by Github.
+You'll be directed to the `Get started with Code Scanning` form, from where you can set up code scanning to use the *CodeQL Analysis* product maintained by GitHub or a third-party code scanning tool. For this lab, we'll pick the CodeQL product. To enable this, you'll click the `Set up this workflow` for the `CodeQL Analysis` product maintained by GitHub.
 
 ![Code Scanning - Get started](../images/getstartedwithcodescanning.PNG)
 
