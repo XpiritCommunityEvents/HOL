@@ -4,11 +4,11 @@
 This hands-on lab has the objective to show you how you can migrate an existing Azure DevOps git repository to GitHub. At the end of this hands on lab, your GitHub repository (`https://github.com/XpiritCommunityEvents/attendee-<yourGitHubhandle>`) will contain a migrated copy of an Azure DevOps repository that we have prepared for this exercise. This is the first step that needs to be finished for all the other labs to succeed, as you will use this repository to perform the other hands on labs. Good luck! 👍
 
 This hands on lab consists of the following steps:
-- [Acquire the Azure DevOps Git repository URI](#11acquire-the-azure-devops-git-repository-uri)
-- [Import the repository](#12import-the-repository)
-- [Clone the repository - Using command line](#13clone-the-repository---using-command-line)
-- [Import the repository - Using GUI](#14import-the-repository---using-gui) (optional)
-- [Create a Branch Rule](#15create-a-branch-rule)
+- [Acquire the Azure DevOps Git repository URI](#1-migratingrepository.md#11-acquire-the-azure-devops-git-repository-uri)
+- [Import the repository](#2-import-the-repository)
+- [Clone the repository - Using command line](#3-clone-the-repository---using-command-line)
+- [Import the repository - Using GUI](#4-import-the-repository---using-gui) (optional)
+- [Create a Branch Rule](#5-create-a-branch-rule)
 - [If time permits: enforce CODEOWNERS review](if-time-permits-enforce-codeowners-review)
 
 ### 1.1 Acquire the Azure DevOps Git repository URI
