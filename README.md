@@ -14,7 +14,12 @@ You can find the details for each of the hands-on labs in the sequence of the bo
 - Hands-on lab 6: [Enabling and using Dependabot on your repository](/labs/6-dependabot.md)
 
 # Relevant links
+- [Download Git client](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 - [Visualizing Git](https://git-school.github.io/visualizing-git/)
+- [Semantic Versioning](http://semver.org/)
+- [GitHub Flow guide](https://guides.github.com/introduction/flow)
+- [GitHub documentation](https://docs.github.com/en/)
+- [Mastering GitHub markdown language](https://guides.github.com/features/mastering-markdown/)
 
 # Contribute back! 
 When you find errors or inconsistencies in the lab descriptions, or there are additions you want to contribute, then please make the change and create a pull request so we can adopt this in our next workshop. 
