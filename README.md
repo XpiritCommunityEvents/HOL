@@ -28,4 +28,4 @@ Enjoy and learn :octocat:
 
 ![image](https://user-images.githubusercontent.com/84850418/142214345-c35f275d-70c1-4bfd-b329-f31eeecfe90a.png)
 
-[^note]: Content is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
+> All content is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
