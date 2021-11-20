@@ -20,6 +20,7 @@ You can find the details for each of the hands-on labs in the sequence of the bo
 - [GitHub Flow guide](https://guides.github.com/introduction/flow)
 - [GitHub documentation](https://docs.github.com/en/)
 - [Mastering GitHub markdown language](https://guides.github.com/features/mastering-markdown/)
+- [GitHub Marketplace: Actions](https://github.com/marketplace?type=actions)
 
 # Contribute back! 
 When you find errors or inconsistencies in the lab descriptions, or there are additions you want to contribute, then please make the change and create a pull request so we can adopt this in our next workshop. 
