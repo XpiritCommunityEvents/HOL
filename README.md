@@ -11,7 +11,7 @@ You can find the details for each of the hands-on labs in the sequence of the bo
 - Hands-on lab 3: [Creating your first Action Workflow](/labs/3-firstactionworkflow.md)
 - Hands-on lab 4: [Creating a .NET Actions workflow](/labs/4-.NETactionsworkflow.md)
 - Hands-on lab 5: [Setting up Code Scanning and Security Scanning for your repository](/labs/5-advancedsecurity.md)
-- Hands-on lab 6: [Enabling and using Dependabot on your repository](/labs/6-dependabot.md) (If time permits)
+- Hands-on lab 6: [Enabling and using Dependabot on your repository](/labs/6-dependabot.md)
 
 # Contribute back! 
 When you find errors or inconsistencies in the lab descriptions, or there are additions you want to contribute, then please make the change and create a pull request so we can adopt this in our next workshop. 
