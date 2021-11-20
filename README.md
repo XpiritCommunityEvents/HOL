@@ -13,6 +13,9 @@ You can find the details for each of the hands-on labs in the sequence of the bo
 - Hands-on lab 5: [Setting up Code Scanning and Security Scanning for your repository](/labs/5-advancedsecurity.md)
 - Hands-on lab 6: [Enabling and using Dependabot on your repository](/labs/6-dependabot.md)
 
+# Relevant links
+- [Visualizing Git](https://git-school.github.io/visualizing-git/)
+
 # Contribute back! 
 When you find errors or inconsistencies in the lab descriptions, or there are additions you want to contribute, then please make the change and create a pull request so we can adopt this in our next workshop. 
 
