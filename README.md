@@ -1,4 +1,4 @@
-<img src="https://user-images.githubusercontent.com/84850418/142252744-6a3d3419-4de1-4752-9c23-4bfa6ae2760f.png" height="100">
+<img src='/images/Xpirit%20logo%20white.png' height='150' alt="Xpirit Logo">
 
 # GitHub Code To Cloud Workshop hands-on labs
 
@@ -27,6 +27,6 @@ When you find errors or inconsistencies in the lab descriptions, or there are ad
 
 Enjoy and learn :octocat:
 
-![image](https://user-images.githubusercontent.com/84850418/142214345-c35f275d-70c1-4bfd-b329-f31eeecfe90a.png)
+![do epic shit logo](/images/doepicshit.png)
 
 > All content is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
