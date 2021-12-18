@@ -1,4 +1,4 @@
-<img src="https://user-images.githubusercontent.com/84850418/142252744-6a3d3419-4de1-4752-9c23-4bfa6ae2760f.png" height="100">
+![Xpirit Logo](/images/Xpirit%20logo%20white.png)
 
 # GitHub Code To Cloud Workshop hands-on labs
 
